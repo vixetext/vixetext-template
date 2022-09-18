@@ -41,22 +41,22 @@ jobs:
       - shell: bash
         run: |
           ls
-#       - name: Run the build process with Docker
-#         uses: addnab/docker-run-action@v3
-#         with:
-#           image: reinanhs/limarka-render-html:latest
-#           options: -v ${{ github.workspace }}:/var/www/html/data
-#           run: |
-#             cd /var/www/html
-#             cp data/configuracao.yaml .
-#             mkdir -p source/assets/files/
-#             cp data/dist/* source/assets/files/
-#             vendor/bin/jigsaw build
-#             mkdir -p data/build
-#             cp build_local/* data/build -r
-#       - name: Archive limarka artifacts
-#         uses: actions/upload-artifact@v3
-#         with:
-#           name: build-page
-#           path: build
-#           retention-days: 1
+      - name: Run the build process with Docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: reinanhs/limarka-render-html:latest
+          options: -v ${{ github.workspace }}:/var/www/html/data
+          run: |
+            cd /var/www/html
+            cp data/configuracao.yaml .
+            mkdir -p source/assets/files/
+            cp data/xxx-* source/assets/files/
+            vendor/bin/jigsaw build
+            mkdir -p data/build
+            cp build_local/* data/build -r
+      - name: Archive limarka artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-page
+          path: build
+          retention-days: 1
