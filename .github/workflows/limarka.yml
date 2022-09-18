@@ -3,36 +3,34 @@ name: Container Workflow
 on:
   push:
     branches: [ "master" ]
-permissions:
-  contents: write
 jobs:
   build-limarka:
-    runs-on: ubuntu-latest 
-    container: 
+    runs-on: ubuntu-latest
+    container:
       image: docker://reinanhs/limarka:latest
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Run Commands
-      run: |
-        limarka check
-        limarka --version
-        limarka exec
-        mkdir -p dist
-        mv xxx-* ./dist/
-        ls ./dist
-        
-    - name: Archive limarka artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: dist-limarka
-        path: dist
-        retention-days: 1
+      - uses: actions/checkout@v3
+
+      - name: Run Commands
+        run: |
+          limarka check
+          limarka --version
+          limarka exec
+          mkdir -p dist
+          mv xxx-* ./dist/
+          ls ./dist
+
+      - name: Archive limarka artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-limarka
+          path: dist
+          retention-days: 1
 
   build-page:
     needs: build-limarka
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -44,9 +42,12 @@ jobs:
         run: |
           ls
       - name: Run the build process with Docker
+        uses: addnab/docker-run-action@v3
         with:
           image: reinanhs/limarka-render-html:latest
-          options: -v ${{ github.workspace }}:/var/www/html/data
+          options: | 
+            -v ${{ github.workspace }}:/var/www/html/data
+            -e APP_BASE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
           run: |
             cd /var/www/html
             cp data/configuracao.yaml .
