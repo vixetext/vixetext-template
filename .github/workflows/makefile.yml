@@ -16,5 +16,14 @@ jobs:
     - name: Run Commands
       run: |
         limarka check
-        limarka version
-        ls
+        limarka --version
+        limarka exec
+        mkdir -p dist
+        mv xxx-* ./dist/
+        ls ./build
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist-without-markdown
+        path: |
+          dist
