@@ -46,7 +46,7 @@ jobs:
       - name: Run the build process with Docker
         with:
           image: reinanhs/limarka-render-html:latest
-          options: -v ${{ github.workspace }}:/var/www/html/data -e APP_BASE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          options: -v ${{ github.workspace }}:/var/www/html/data
           run: |
             cd /var/www/html
             cp data/configuracao.yaml .
