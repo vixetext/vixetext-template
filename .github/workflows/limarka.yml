@@ -4,8 +4,7 @@ on:
   push:
     branches: [ "master" ]
 jobs:
-  build:
-
+  build-limarka:
     runs-on: ubuntu-latest 
     container: 
       image: docker://reinanhs/limarka:latest
@@ -27,3 +26,23 @@ jobs:
       with:
         name: dist-limarka
         path: dist
+        retention-days: 1
+  build-page:
+    needs: build-limarka
+    runs-on: ubuntu-latest 
+    container: 
+      image: docker://reinanhs/limarka-render-html:latest
+      volumes:
+        - source/assets/files:/dist
+        - .:configuracao.yaml
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download limarka artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-limarka
+      - name: Check file
+        run: |
+          vendor/bin/jigsaw --version
+          ls
+          ls source/assets/files
