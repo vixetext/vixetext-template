@@ -3,6 +3,8 @@ name: Container Workflow
 on:
   push:
     branches: [ "master" ]
+permissions:
+  contents: write
 jobs:
   build-limarka:
     runs-on: ubuntu-latest 
@@ -42,10 +44,11 @@ jobs:
         run: |
           ls
       - name: Run the build process with Docker
-        uses: addnab/docker-run-action@v3
         with:
           image: reinanhs/limarka-render-html:latest
-          options: -v ${{ github.workspace }}:/var/www/html/data
+          options: |
+            -v ${{ github.workspace }}:/var/www/html/data 
+            -e APP_BASE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
           run: |
             cd /var/www/html
             cp data/configuracao.yaml .
@@ -60,3 +63,16 @@ jobs:
           name: build-page
           path: build
           retention-days: 1
+  deploy:
+    needs: build-page
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v3
+        with:
+          name: build-page
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
