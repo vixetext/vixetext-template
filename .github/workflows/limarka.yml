@@ -42,8 +42,8 @@ jobs:
           run: |
             composer --version
             php --version
-            vendor/bin/jigsaw --version
-            pwd
+            ls /var/www/html
+            cd /var/www/html && vendor/bin/jigsaw --version
             ls
 #       - uses: actions/checkout@v3
 #       - name: Download limarka artifact
