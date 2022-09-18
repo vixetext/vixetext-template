@@ -40,12 +40,13 @@ jobs:
           image: reinanhs/limarka-render-html:latest
           options: -v ${{ github.workspace }}:/var/www/html/data
           run: |
-            composer --version
-            php --version
-            ls /var/www/html
-            ls /var/www/html/data
+            cd /var/www/html
+            cp data/configuracao.yaml .
+            vendor/bin/jigsaw build
+            mkdir -p data/build
+            cp build_local/* data/build -r
+      
 #       - uses: actions/checkout@v3
 #       - name: Download limarka artifact
-#         uses: actions/download-artifact@v3
-#         with:
-#           name: dist-limarka
+      - name: Teste
+        run: ls ${{ github.workspace }}
