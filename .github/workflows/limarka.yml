@@ -38,14 +38,13 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: reinanhs/limarka-render-html:latest
-          options: -v ${{ github.workspace }}:/var/www/html
+          options: -v ${{ github.workspace }}:/var/www
           run: |
             composer --version
             php --version
             vendor/bin/jigsaw --version
             pwd
             ls
-            ls /var/www/html
 #       - uses: actions/checkout@v3
 #       - name: Download limarka artifact
 #         uses: actions/download-artifact@v3
