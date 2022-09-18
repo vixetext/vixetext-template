@@ -4,45 +4,44 @@ on:
   push:
     branches: [ "master" ]
 jobs:
-  build-limarka:
-    runs-on: ubuntu-latest 
-    container: 
-      image: docker://reinanhs/limarka:latest
+#   build-limarka:
+#     runs-on: ubuntu-latest 
+#     container: 
+#       image: docker://reinanhs/limarka:latest
 
-    steps:
-    - uses: actions/checkout@v3
+#     steps:
+#     - uses: actions/checkout@v3
     
-    - name: Run Commands
-      run: |
-        limarka check
-        limarka --version
-        limarka exec
-        mkdir -p dist
-        mv xxx-* ./dist/
-        ls ./dist
+#     - name: Run Commands
+#       run: |
+#         limarka check
+#         limarka --version
+#         limarka exec
+#         mkdir -p dist
+#         mv xxx-* ./dist/
+#         ls ./dist
         
-    - name: Archive limarka artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: dist-limarka
-        path: dist
-        retention-days: 1
+#     - name: Archive limarka artifacts
+#       uses: actions/upload-artifact@v3
+#       with:
+#         name: dist-limarka
+#         path: dist
+#         retention-days: 1
+
   build-page:
-    needs: build-limarka
+#     needs: build-limarka
     runs-on: ubuntu-latest 
     container: 
       image: docker://reinanhs/limarka-render-html:latest
       volumes:
-        - source/assets/files:/dist
+#         - source/assets/files:/dist
         - .:configuracao.yaml
+        - .:anexos.md
     steps:
       - uses: actions/checkout@v3
-      - name: Download limarka artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: dist-limarka
+#       - name: Download limarka artifact
+#         uses: actions/download-artifact@v3
+#         with:
+#           name: dist-limarka
       - name: Check file
-        run: |
-          vendor/bin/jigsaw --version
-          ls
-          ls source/assets/files
+        run: vendor/bin/jigsaw --version && ls
