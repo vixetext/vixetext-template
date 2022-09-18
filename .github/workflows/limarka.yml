@@ -4,32 +4,32 @@ on:
   push:
     branches: [ "master" ]
 jobs:
-#   build-limarka:
-#     runs-on: ubuntu-latest 
-#     container: 
-#       image: docker://reinanhs/limarka:latest
+  build-limarka:
+    runs-on: ubuntu-latest 
+    container: 
+      image: docker://reinanhs/limarka:latest
 
-#     steps:
-#     - uses: actions/checkout@v3
+    steps:
+    - uses: actions/checkout@v3
     
-#     - name: Run Commands
-#       run: |
-#         limarka check
-#         limarka --version
-#         limarka exec
-#         mkdir -p dist
-#         mv xxx-* ./dist/
-#         ls ./dist
+    - name: Run Commands
+      run: |
+        limarka check
+        limarka --version
+        limarka exec
+        mkdir -p dist
+        mv xxx-* ./dist/
+        ls ./dist
         
-#     - name: Archive limarka artifacts
-#       uses: actions/upload-artifact@v3
-#       with:
-#         name: dist-limarka
-#         path: dist
-#         retention-days: 1
+    - name: Archive limarka artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist-limarka
+        path: dist
+        retention-days: 1
 
   build-page:
-#     needs: build-limarka
+    needs: build-limarka
     runs-on: ubuntu-latest 
     steps:
       - name: Check out the repo
@@ -46,11 +46,13 @@ jobs:
           run: |
             cd /var/www/html
             cp data/configuracao.yaml .
+            cp data/dist/* source/assets/files/
             vendor/bin/jigsaw build
             mkdir -p data/build
             cp build_local/* data/build -r
-      
-#       - uses: actions/checkout@v3
-#       - name: Download limarka artifact
-      - name: Teste
-        run: ls ${{ github.workspace }}
+      - name: Archive limarka artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-page
+          path: build
+          retention-days: 1
