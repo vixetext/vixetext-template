@@ -1,0 +1,20 @@
+name: Container Workflow
+
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest 
+    container: 
+      image: docker://reinanhs/limarka:latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Run Commands
+      run: |
+        sudo limarka check
+        sudo limarka version
+        ls
