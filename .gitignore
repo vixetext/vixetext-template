@@ -1,3 +1,5 @@
 xxx-*
 Gemfile.lock
 missfont.log
+/build
+/.idea

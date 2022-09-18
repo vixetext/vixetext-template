@@ -1,0 +1,8 @@
+services:
+  limarka:
+    container_name: "limarka-app"
+    image: reinanhs/limarka:latest
+    tty: true
+    command: "/bin/bash"
+    volumes:
+      - .:/usr/src/trabalho
