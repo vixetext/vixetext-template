@@ -31,15 +31,22 @@ jobs:
   build-page:
 #     needs: build-limarka
     runs-on: ubuntu-latest 
-    container: 
-      image: docker://reinanhs/limarka-render-html:latest
-      volumes:
-          - ${{ github.workspace }}:/var/www/html/
     steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      - name: Run the build process with Docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: docker://reinanhs/limarka-render-html:latest
+          options: -v ${{ github.workspace }}:/var/www/html
+          run: |
+            composer --version
+            php --version
+            vendor/bin/jigsaw --version
+            pwd
+            ls
 #       - uses: actions/checkout@v3
 #       - name: Download limarka artifact
 #         uses: actions/download-artifact@v3
 #         with:
 #           name: dist-limarka
-      - name: Check file
-        run: ls && ls ${{ github.workspace }}
