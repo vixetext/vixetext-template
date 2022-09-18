@@ -20,10 +20,10 @@ jobs:
         limarka exec
         mkdir -p dist
         mv xxx-* ./dist/
-        ls ./build
-    - name: Archive production artifacts
+        ls ./dist
+        
+    - name: Archive limarka artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: dist-without-markdown
-        path: |
-          dist
+        name: dist-limarka
+        path: dist
