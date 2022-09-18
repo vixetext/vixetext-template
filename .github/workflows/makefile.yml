@@ -15,6 +15,6 @@ jobs:
     
     - name: Run Commands
       run: |
-        sudo limarka check
-        sudo limarka version
+        limarka check
+        limarka version
         ls
