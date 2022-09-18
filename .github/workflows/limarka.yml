@@ -37,7 +37,7 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-          image: docker://reinanhs/limarka-render-html:latest
+          image: reinanhs/limarka-render-html:latest
           options: -v ${{ github.workspace }}:/var/www/html
           run: |
             composer --version
