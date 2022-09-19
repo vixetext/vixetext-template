@@ -1,0 +1,16 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "pt_BR.UTF8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Latexmk: Run number 1 of rule 'xelatex'
+Latexmk: Non-existent bbl file 'xxx-trabalho-academico.bbl'
+ No file xxx-trabalho-academico.bbl.
+Latexmk: Run number 1 of rule 'makeindex xxx-trabalho-academico.idx'
+Latexmk: Run number 1 of rule 'bibtex xxx-trabalho-academico'
+Latexmk: Run number 2 of rule 'xelatex'
+Latexmk: Run number 2 of rule 'bibtex xxx-trabalho-academico'
+Latexmk: Run number 3 of rule 'xelatex'
+Latexmk: Run number 1 of rule 'xdvipdfmx'

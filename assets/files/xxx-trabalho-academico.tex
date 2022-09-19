@@ -1,0 +1,548 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%5
+%% abtex2-modelo-trabalho-academico.tex, v<VERSION> laurocesar
+%% Copyright 2012-<COPYRIGHT_YEAR> by abnTeX2 group at http://www.abntex.net.br/
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The Current Maintainer of this work is the abnTeX2 team, led
+%% by Lauro César Araujo. Further information are available on
+%% http://www.abntex.net.br/
+%%
+%% This work consists of the files abntex2-modelo-trabalho-academico.tex,
+%% abntex2-modelo-include-comandos and abntex2-modelo-references.bib
+%%
+
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% abnTeX2: Modelo de Trabalho Academico (tese de doutorado, dissertacao de
+% mestrado e trabalhos monograficos em geral) em conformidade com
+% ABNT NBR 14724:2011: Informacao e documentacao - Trabalhos academicos -
+% Apresentacao
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+%  openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	oneside,			% para impressão em recto e verso use twoside
+	a4paper,			% tamanho do papel.
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+	]{abntex2}
+
+% ---
+% Pacotes básicos
+% ---
+\usepackage{times}			    % Usa fonte times
+\renewcommand{\ABNTEXchapterfont}{\normalfont} % para aplicar a fonte escolhida em tudo
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+% ---
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+% ---
+% CONFIGURAÇÕES DE PACOTES
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Título do trabalho}
+\autor{Nome do autor}
+\data{2019}
+\local{Cidade - UF}
+\orientador{Nome-do-Orientador}
+\coorientador{}
+\instituicao{%
+  Universidade/Faculdade do Brasil
+  \par
+  Meu-curso
+}
+\tipotrabalho{Monografia}
+
+% O preambulo deve conter o tipo do trabalho, o objetivo (propósito),
+% o nome da instituição e a área de concentração.
+% Esse texto irá compor a Folha de Rosto e Folha de Aprovação.
+\preambulo{
+% Propósito gerado automaticamente.
+Projeto de Monografia apresentado ao Curso de Meu-curso da Universidade/Faculdade do Brasil, como requisito parcial para obtenção do grau de Minha-titulação.
+\newline\textbf{Área de concentração}: Computação.
+}%% fim do preambulo
+
+
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title},
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2 and Limarka},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}{limarka},
+		colorlinks=false,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=black,      		% color of file links
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+% ---
+
+% ---
+% Possibilita criação de Quadros e Lista de quadros.
+% Ver https://github.com/abntex/abntex2/issues/176
+%
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+
+% configurações para atender às regras da ABNT
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space}
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+
+% ---
+
+
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+%---
+% CONFIGURAÇÕES EXTRA DO LIMARKA
+%---
+
+% Configura citações de pandoc para 4cm à esquerda (utiliza o ambiente quote)
+\renewenvironment{quote}
+  {\small\list{}{\rightmargin=0.1cm \leftmargin=4cm}%
+   \item\relax}
+  {\endlist}
+
+% Para incluir páginas PDF (ficha catalografica e folha de aprovação)
+\usepackage[dvipsnames]{xcolor} % http://tex.stackexchange.com/questions/124636/package-xcolor-error-undefined-colors-maroon-royal-blue-when-master-has-pdf
+\usepackage{pdfpages}
+\usepackage{longtable,ltcaption,booktabs} % para as tabelas pandoc e quadros ABNT
+%\usepackage{floatrow}
+%\floatsetup[figure]{capposition=top}
+
+% Para melhorar o visual do quadro
+\usepackage{boldline} 
+\def\toprule{\hlineB{3}} % primeira linha mais gorda
+\def\midrule{\hline}
+\def\bottomrule{\hlineB{3}} % última linha mais gorda
+
+
+
+% ---
+% BUG: Imagens e tabelas apareciam no meio da página em branco
+% https://github.com/abntex/trabalho-academico-limarka/issues/1
+% O código a seguir posta imagens ou tabelas em página em branco no topo, em vez do meio (comportamento padrão)
+\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% ---
+
+% ---
+% Usado pelo limarka como hook para criação de novas listas.
+% https://github.com/abntex/trabalho-academico-limarka/issues/16
+%
+\newcommand{\listasdousuario}{}
+
+% ---
+% CUSTOMIZAÇÕES DO USUÁRIO (somente se existir arquivo latexcustomizacao.sty)
+% ---
+\IfFileExists{latexcustomizacao.sty}{\usepackage{latexcustomizacao}}{}
+
+%%
+%% Esse modelo é responsável pela impressão dos seguintes elementos:
+%% Capa, Folha de rosto e Ficha catalográfica.
+
+\special{dvipdfmx:config z 0}
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa 
+% ---
+% Gerando capa abnTeX2
+\imprimircapa
+
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Folha de rosto: sempre será impressa
+% ---
+\imprimirfolhaderosto
+
+% ---
+% Sem ficha catalográfica
+% ---
+% ---
+
+
+% ---
+% ERRATA: Sem errata
+% ---
+
+
+% ---
+% Sem Folha de aprovação
+% ---
+% ---
+% ---
+% Dedicatória
+% ---
+% ---
+% Agradecimentos
+% ---
+% ---
+% Epígrafe
+% ---
+% ---
+
+% ---
+% Resumo na língua vernácula (obrigatório)
+% ---
+
+
+% ---
+% Resumo em língua estrangeira (obrigatório)
+% ---
+
+
+
+% ---
+
+% ---
+% Lista de ilustrações (opcional): não utilizando.
+% ---
+
+
+% ---
+% Lista de quadros (opcional): não utilizando.
+% ---
+
+% Carrega listas definidas pelo usuário em `latexcustomizacao.sty`
+\listasdousuario
+% ---
+% Lista de tabelas (opcional): não utilizando
+% ---
+
+% ---
+% Lista de abreviaturas e siglas (opcional)
+% ---
+\begin{siglas}
+  \item[ABNT] Associação Brasileira de Normas Técnicas
+\end{siglas}
+% ---
+
+% ---
+% Lista de símbolos (opcional): AUSENTE
+% ---
+% ---
+% Sumário
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+\pagestyle{simple}                  % #17 Cabeçalho apenas com
+\aliaspagestyle{chapter}{simple}    % a numeração das páginas
+
+
+\hypertarget{introduuxe7uxe3o}{%
+\chapter{Introdução}\label{introduuxe7uxe3o}}
+
+\hypertarget{motivauxe7uxe3o}{%
+\section{Motivação}\label{motivauxe7uxe3o}}
+
+\hypertarget{objetivos}{%
+\section{Objetivos}\label{objetivos}}
+
+\hypertarget{objetivo-geral}{%
+\subsection{Objetivo geral}\label{objetivo-geral}}
+
+Apresentação do objetivo geral.
+
+\hypertarget{objetivos-especuxedficos}{%
+\subsection{Objetivos específicos}\label{objetivos-especuxedficos}}
+
+\begin{itemize}
+\tightlist
+\item
+  objetivo 1;
+\item
+  objetivo 2;
+\item
+  objetivo 3.
+\end{itemize}
+
+\hypertarget{como-utilizar-recursos-do-limarka}{%
+\chapter{Como utilizar recursos do
+limarka}\label{como-utilizar-recursos-do-limarka}}
+
+\textbf{Consulte o wiki do projeto}:
+https://github.com/abntex/limarka/wiki
+
+Cada capítulo inicia automaticamente em página ímpar (em conformidade
+com as Normas). Por isso que existem várias páginas em branco nesse
+documento.
+
+\hypertarget{como-citar-e-referenciar}{%
+\section{Como citar e referenciar}\label{como-citar-e-referenciar}}
+
+O arquivo de referências é configurado em ``configuracao.pdf'',
+utilize-o para gerenciar suas referências.
+
+Veja um exemplo de citação direta e referenciação a seguir:
+
+\begin{quote}
+A `norma' 6023:2000 (2) é complicada e cheia de inconsistências. Jamais
+será possível gerar um estilo bibtex totalmente consistente com a
+`norma', até porque nem a `norma' é compatível com ela mesma. Um bom
+estilo bibliográfico deve ter uma linha lógica para formatação de
+referências. Assim, com alguns poucos exemplos, qualquer pessoa poderia
+deduzir os casos omissos. Nesse sentido, a `norma' 6023 trafega pela
+contra-mão. É quase impossível deduzir sua linha lógica. O problema mais
+grave, no entanto, fica pela maneira de organizar nomes. A ABNT quebrou
+o sobrenome em duas partes. Normalmente se fala apenas em ``\emph{last
+name}'', mas agora temos o ``\emph{last last name}'' graças à ABNT.
+\cite[p. 5]{abntex2cite}.
+\end{quote}
+
+Consulte o documento \citeonline{abntex2cite} para conhecer como
+referenciar os conteúdos.
+
+\hypertarget{como-inserir-imagens}{%
+\section{Como inserir imagens}\label{como-inserir-imagens}}
+
+Por exemplo, a Figura \ref{passaro} mostra um pássaro que possui as
+cores da bandeira do Brasil.
+
+\begin{figure}[htbp]
+\hypertarget{passaro}{%
+\caption{Pássaro com as cores da bandeira do Brasil}\label{passaro}
+\begin{center}
+\includegraphics[scale=0.4]{imagens/passaro.jpg}
+\end{center}
+}
+\legend{Fonte: \citeonline{limarka}}
+\end{figure}
+
+As imagens são inseridas o mais próximo possível do texto que as
+referenciam.
+
+\hypertarget{r}{%
+\chapter{R}\label{r}}
+
+\hypertarget{como-inserir-imagens-do-r}{%
+\section{Como inserir imagens do R}\label{como-inserir-imagens-do-r}}
+
+A Figura \ref{histograma} é um histograma.
+
+\begin{figure}[htbp]
+\hypertarget{histograma}{%
+\caption{Exemplo de histograma}\label{histograma}
+\begin{center}
+\includegraphics[scale=0.4]{imagens/R/historgrama.pdf}
+\end{center}
+}
+\legend{Fonte: Autor.}
+\end{figure}
+
+Para gerar os códigos R, digite \texttt{rake\ r} no terminal. Isso irá
+compilar todas os códigos dentro da pasta imagens, com extensão
+\texttt{.R} para \texttt{.pdf}, em seguida poderá incluir normalmente
+como uma imagem.
+
+\textbf{NOTA}: Certifique-se de ter instalado todos os pacotes R
+necessários para compilar sua imagem.
+
+Também é recomendado a utilização do \texttt{guard} para geração
+automática quando houver alterações.
+
+\begin{figure}[htbp]
+\hypertarget{pizza}{%
+\caption{Exemplo de geração de gráfico R}\label{pizza}
+\begin{center}
+\includegraphics[scale=0.4]{imagens/R/pizza-grafico.pdf}
+\end{center}
+}
+\legend{Fonte: Autor.}
+\end{figure}
+
+\hypertarget{dois-gruxe1ficos-r-juntos}{%
+\chapter{Dois gráficos R juntos}\label{dois-gruxe1ficos-r-juntos}}
+
+\begin{figure}[htbp]
+\hypertarget{doisgraficos}{%
+\caption{Exemplo de geração dois gráficos R, lado a lado}\label{doisgraficos}
+\begin{center}
+\includegraphics[scale=0.4]{imagens/R/dois-graficos.pdf}
+\end{center}
+}
+\legend{Fonte: Autora.}
+\end{figure}
+
+\hypertarget{tabelas}{%
+\section{Tabelas}\label{tabelas}}
+
+Configurações de figura
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright
+configuração\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
+descrição\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+fig.align\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+Alinhamento de graficos e figura no documento final: `left', `right', or
+`center'\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+out.height out.width\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+Escala de fargura e altura da figura no documento final. Pode ser
+``\%'', ``px'', ``cm''\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Início dos ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{xxx-referencias}
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+%% 
+% Seção de apendices configurada como desativada
+%% 
+% ---
+
+% ----------------------------------------------------------
+% Anexos desativados: 
+% Seção de anexos configurada como desativada
+% ----------------------------------------------------------
+
+
+
+\end{document}
