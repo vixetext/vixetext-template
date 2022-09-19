@@ -47,7 +47,7 @@ jobs:
           image: reinanhs/limarka-render-html:latest
           options: | 
             -v ${{ github.workspace }}:/var/www/html/data
-            -e APP_BASE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+            -e APP_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           run: |
             cd /var/www/html
             cp data/configuracao.yaml .
@@ -73,7 +73,12 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-page
+      - shell: bash
+        run: |
+          mkdir -p build
+          cp index.html ./build
+          cp assets/ ./build -r
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: . # The folder the action should deploy.
+          folder: build # The folder the action should deploy.
