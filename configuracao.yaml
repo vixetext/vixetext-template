@@ -12,7 +12,7 @@ area_de_concentracao: Computação
 linha_de_pesquisa: ''
 coorientador: ''
 orientador: Nome-do-Orientador
-referencias_caminho: referencias.bib
+referencias_caminho: config/referencias.bib
 proposito: ''
 resumo: ''
 palavras_chave: ''

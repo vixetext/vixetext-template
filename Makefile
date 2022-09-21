@@ -5,4 +5,4 @@ down:
 bash:
 	docker exec -it limarka-app /bin/bash
 build:
-	docker exec -it limarka-app /bin/bash -c "limarka exec"
+	docker exec -it limarka-app /bin/bash -c "limarka exec -o build"
