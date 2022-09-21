@@ -44,7 +44,7 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-          image: reinanhs/limarka-render-html:0.0.1
+          image: reinanhs/limarka-render-html:0.0.2
           options: |
             -v ${{ github.workspace }}:/var/www/html/data
             -e APP_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
@@ -55,6 +55,7 @@ jobs:
             cp data/configuracao.yaml .
             mkdir -p source/assets/files/
             cp data/xxx-* source/assets/files/
+            cp data/docs/*.md source/_pages
             vendor/bin/jigsaw build
             mkdir -p data/build
             cp build_local/* data/build -r
