@@ -1,4 +1,4 @@
-# Introdução
+@import('pages/introducao.md')
 
 ## Motivação
 
@@ -84,8 +84,6 @@ Fonte: Autor.
 ![Exemplo de geração dois gráficos R, lado a lado](imagens/R/dois-graficos.pdf){#doisgraficos escala=0.4}
 
 Fonte: Autora.
-
-
 
 ## Tabelas
 

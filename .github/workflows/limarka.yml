@@ -7,7 +7,7 @@ jobs:
   build-limarka:
     runs-on: ubuntu-latest
     container:
-      image: docker://reinanhs/limarka:latest
+      image: docker://reinanhs/limarka-help:1.0.0
 
     steps:
       - uses: actions/checkout@v3
@@ -16,9 +16,9 @@ jobs:
         run: |
           limarka check
           limarka --version
-          limarka exec
+          limarka-help
           mkdir -p dist
-          mv xxx-* ./dist/
+          mv build/* ./dist/
           ls ./dist
 
       - name: Archive limarka artifacts

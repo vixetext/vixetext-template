@@ -254,7 +254,7 @@ $endif$}%% fim do preambulo
 \newcommand{\listasdousuario}{}
 
 % ---
-% CUSTOMIZAÇÕES DO USUÁRIO (somente se existir arquivo latexcustomizacao.sty)
+% CUSTOMIZAÇÕES DO USUÁRIO (somente se existir arquivo config/latexcustomizacao.sty)
 % ---
 \IfFileExists{latexcustomizacao.sty}{\usepackage{latexcustomizacao}}{}
 
