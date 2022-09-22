@@ -1,4 +1,4 @@
-# Introdução
+@import('pages/introducao.md')
 
 ## Motivação
 
@@ -53,7 +53,7 @@ Por exemplo, a Figura \ref{passaro} mostra um pássaro que possui as cores da ba
 Para referenciar essa figura no texto utilize: Figura \ref{passaro} ou \autoref{passaro}
 -->
 
-![Pássaro com as cores da bandeira do Brasil](assets/passaro.jpg){#passaro escala=0.4}
+![Pássaro com as cores da bandeira do Brasil](imagens/passaro.jpg){#passaro escala=0.4}
 
 Fonte: \citeonline{limarka}
 
@@ -65,7 +65,7 @@ As imagens são inseridas o mais próximo possível do texto que as referenciam.
 
 A Figura \ref{histograma} é um histograma.
 
-![Exemplo de histograma](assets/R/historgrama.pdf){#histograma escala=0.4}
+![Exemplo de histograma](imagens/R/historgrama.pdf){#histograma escala=0.4}
 
 Fonte: Autor.
 
@@ -75,13 +75,13 @@ Para gerar os códigos R, digite `rake r` no terminal. Isso irá compilar todas 
 
 Também é recomendado a utilização do `guard` para geração automática quando houver alterações.
 
-![Exemplo de geração de gráfico R](assets/R/pizza-grafico.pdf){#pizza escala=0.4}
+![Exemplo de geração de gráfico R](imagens/R/pizza-grafico.pdf){#pizza escala=0.4}
 
 Fonte: Autor.
 
 # Dois gráficos R juntos
 
-![Exemplo de geração dois gráficos R, lado a lado](assets/R/dois-graficos.pdf){#doisgraficos escala=0.4}
+![Exemplo de geração dois gráficos R, lado a lado](imagens/R/dois-graficos.pdf){#doisgraficos escala=0.4}
 
 Fonte: Autora.
 
