@@ -1,7 +1,7 @@
 services:
   limarka:
     container_name: "limarka-app"
-    image: reinanhs/limarka-help:latest
+    image: reinanhs/limarka-help:1.0.0
     tty: true
     command: "/bin/bash"
     volumes:
