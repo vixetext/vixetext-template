@@ -38,9 +38,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-limarka
-      - shell: bash
-        run: |
-          ls
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
@@ -56,8 +53,10 @@ jobs:
             mkdir -p source/assets/files/
             cp data/xxx-* source/assets/files/
             cp data/pages/*.md source/_pages
+            ls build_production -at
             vendor/bin/jigsaw build
-            ls
+            ls build_local -at
+            ls --ignore=vendor --ignore=node_modules -at
             mkdir -p data/build
             cp build_local/* data/build -r
       - name: Archive limarka artifacts
