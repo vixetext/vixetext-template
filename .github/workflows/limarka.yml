@@ -53,10 +53,7 @@ jobs:
             mkdir -p source/assets/files/
             cp data/xxx-* source/assets/files/
             cp data/pages/*.md source/_pages
-            ls build_production -at
             vendor/bin/jigsaw build
-            ls build_local -at
-            ls --ignore=vendor --ignore=node_modules -at
             mkdir -p data/build
             cp build_local/* data/build -r
       - name: Archive limarka artifacts
@@ -76,11 +73,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-page
-      - shell: bash
-        run: |
-          mkdir -p build
-          cp index.html ./build
-          cp assets/ ./build -r
+          path: build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
