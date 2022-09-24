@@ -1,4 +1,4 @@
-PWD /__w/limarka-template-tcc/limarka-template-tcc
+PWD /tmp/TMP_8ca144c84bb084d6473f1b9be35d4615
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -178,9 +178,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/shipunov/boldline.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/shipunov/boldline.sty
-INPUT latexcustomizacao.sty
-INPUT latexcustomizacao.sty
-INPUT latexcustomizacao.sty
 INPUT xxx-trabalho-academico.aux
 INPUT xxx-trabalho-academico.aux
 OUTPUT xxx-trabalho-academico.aux
@@ -216,6 +213,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-fr.ini
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-es.ini
 INPUT xxx-trabalho-academico.toc
 INPUT xxx-trabalho-academico.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm

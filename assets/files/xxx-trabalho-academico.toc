@@ -3,23 +3,24 @@
 \babel@toc {brazil}{}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivação}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Objetivo geral}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Objetivos específicos}{4}{subsection.1.2.2}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivação}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo geral}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos específicos}{10}{subsection.1.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Como utilizar recursos do limarka}}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Como citar e referenciar}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Como inserir imagens}{5}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Como utilizar recursos do limarka}}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Como citar e referenciar}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Como inserir imagens}{11}{section.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {R}}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Como inserir imagens do R}{7}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {R}}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Como inserir imagens do R}{13}{section.3.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Dois gráficos R juntos}}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tabelas}{9}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Dois gráficos R juntos}}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tabelas}{15}{section.4.1}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{10}{section*.8}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{16}{section*.15}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  21 SEP 2022 00:44
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  24 SEP 2022 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,8 +707,6 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 \LTcapright=\skip274
 ) (/usr/share/texlive/texmf-dist/tex/latex/shipunov/boldline.sty
 Package: boldline 2008/02/04 v0.2 Adjust line width in tables
-) (./latexcustomizacao.sty
-Package: latexcustomizacao 2017 Criacao desta customizacao do abnTeX2
 ) (./xxx-trabalho-academico.aux)
 \openout1 = `xxx-trabalho-academico.aux'.
 
@@ -792,27 +790,59 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [2
 
+] [3
 
-] (./xxx-trabalho-academico.toc) [3
+
+] [4
+
+] [5
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-74.
+Package babel Info: \l@french = using hyphenrules for portuguese
+(babel)             (\language3) on input line 353.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
+Package babel Info: Importing basic data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+
+Package babel Warning: From babel-fr.ini:
+(babel)                The `french' date format may not be suitable
+(babel)                for proper typesetting, and therefore very likely
+(babel)                it will change in a future release.
+(babel)                Reported  on input line 11.
+
+) [6
+
+]
+Package babel Info: \l@spanish = using hyphenrules for portuguese
+(babel)             (\language3) on input line 364.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+Package babel Info: Importing basic data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) [7
+
+] [8
+
+
+] (./xxx-trabalho-academico.toc) [9
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
+59.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [4
+) [10
 
 
 ]
 File: imagens/passaro.jpg Graphic file (type bmp)
 <imagens/passaro.jpg>
-[5
+[11
 
-] [6]
+] [12]
 File: imagens/R/historgrama.pdf Graphic file (type pdf)
 <use imagens/R/historgrama.pdf>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 45
-4.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 53
+9.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -822,44 +852,44 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 File: imagens/R/pizza-grafico.pdf Graphic file (type pdf)
 <use imagens/R/pizza-grafico.pdf>
-[7
+[13
 
-] [8]
+] [14]
 File: imagens/R/dois-graficos.pdf Graphic file (type pdf)
 <use imagens/R/dois-graficos.pdf>
 (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
 \tf@brf=\write5
 \openout5 = `xxx-trabalho-academico.brf'.
 
-[9
+[15
 
 ]
 bibitemlist
 ) 
 AED: lastpage setting LastPage
-[10
+[16
 
 ]
 \tf@toc=\write6
 \openout6 = `xxx-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 548.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 548.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 633.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 633.
 (./xxx-trabalho-academico.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 548.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 548.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 633.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 633.
 Package rerunfilecheck Info: File `xxx-trabalho-academico.brf' has not changed.
 
-(rerunfilecheck)             Checksum: 741E6C6C184E1B7F2D8B6898A4326ABF;134.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 548.
+(rerunfilecheck)             Checksum: 2E66A3E7C743656A5FFDBBD76465B755;137.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 633.
  ) 
 Here is how much of TeX's memory you used:
- 17392 strings out of 481788
- 266700 string characters out of 5937331
+ 17603 strings out of 481788
+ 271294 string characters out of 5937331
  727035 words of memory out of 5000000
- 34117 multiletter control sequences out of 15000+600000
+ 34320 multiletter control sequences out of 15000+600000
  554522 words of font info for 50 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  42i,11n,45p,279b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on xxx-trabalho-academico.xdv (11 pages, 22220 bytes).
+Output written on xxx-trabalho-academico.xdv (17 pages, 28160 bytes).
