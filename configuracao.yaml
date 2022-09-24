@@ -72,4 +72,11 @@ page_render:
   pages_render:
     - resumo.md
     - agradecimentos.md
+  files_type:
+    - pdf
+    - tex
+    - bib
+  files_map:
+    - "xxx-trabalho-academico.tex:trabalho-academico.tex"
+    - "xxx-referencias.bib:referencias.bib"
 ---

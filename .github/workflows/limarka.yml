@@ -41,7 +41,7 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-          image: reinanhs/limarka-render-html:v0.1.1
+          image: reinanhs/limarka-render-html:v0.1.2
           options: |
             -v ${{ github.workspace }}:/var/www/html/data
             -e APP_BASE_URL=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
