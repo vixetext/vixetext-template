@@ -34,6 +34,8 @@ Os principais recurso são:
 - Melhorias na estrutura de arquivos.
 - Adicionar nova funcionalidade para importar arquivos markdown.
 
+Veja esse vídeo com uma introdução rápida sobre esse template: [Limarka: como escrever um tcc em markdown](https://youtu.be/zuw0Fo1la2U)
+
 ## Como instalar e executar o modelo <a name="head-instalar"></a>
 
 A maneira recomendada de instalar este projeto é seguindo estas etapas:
