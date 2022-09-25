@@ -9,7 +9,21 @@ Esse repositorio é responsavel por contém os arquivos do esqueleto (modelo) pa
 
 Provavelmente se você chegou a utilizar o [abntex/trabalho-academico-limarka](https://github.com/abntex/trabalho-academico-limarka), você encontrou problemas ao configurar o ambiente. Ao usar esse modelo vários problemas serão solucionados.
 
-## O que esse modelo tem de diferente?
+## Sumário
+
+<details open>
+<summary>Principais informações</summary>
+
+* [O que esse modelo tem de diferente?](#head-intro)
+* [Como instalar e executar o modelo](#head-instalar)
+* [Documentação completa](#head-documentacao)
+* [Tecnologias e ferramentas utilizadas](#head-tecnologias)
+* [Licença](#head-licenca)
+* [Créditos](#head-creditos)
+
+</details>
+
+## O que esse modelo tem de diferente? <a name="head-intro"></a>
 
 Durante a criação deste modelo, novos recursos foram adicionados para ajudá-lo a escrever um trabalho acadêmico com maior facilidade.
 Os principais recurso são:
@@ -20,7 +34,41 @@ Os principais recurso são:
 - Melhorias na estrutura de arquivos.
 - Adicionar nova funcionalidade para importar arquivos markdown.
 
-## Tecnologias e ferramentas utilizadas
+## Como instalar e executar o modelo <a name="head-instalar"></a>
+
+A maneira recomendada de instalar este projeto é seguindo estas etapas:
+
+1. Realize o clone do projeto para a sua máquina
+
+```shell
+git clone https://github.com/ReinanHS/limarka-template-tcc.git
+```
+
+2. Acessar as pastas do projeto
+3. Certifique se de ter o [docker](#head-docker) e [make](https://www.youtube.com/watch?v=a3ejgWLqelQ) instalado em sua maquina
+4. Execute os seguintes comandos:
+
+```shell
+cd limarka-template-tcc 
+make up
+```
+
+**Atenção**: Se você não tiver o comando `make` instalado em sua máquina, você pode rodar o comando:
+`docker-compose up`
+
+5. Você deverá abrir outro terminal e executar o seguinte comando:
+
+```shell
+make build
+```
+
+Após fazer e execução desse comando será gerado uma pasta `build` com o arquivo compilado do seu projeto.
+
+## Documentação completa <a name="head-documentacao"></a>
+
+Veja a documentação sobre esse modelo acessando esse [link](https://github.com/ReinanHS/limarka-template-tcc/wiki)
+
+## Tecnologias e ferramentas utilizadas <a name="head-tecnologias"></a>
 
 As principais tecnologias usadas foram:
 
@@ -91,10 +139,10 @@ Quer fazer parte desse projeto? Clique AQUI e leia [como contribuir](CONTRIBUTIN
 Se você descobrir algum problema relacionado à segurança, envie um e-mail para reinangabriel1520@gmail.com em vez de
 usar o issue.
 
-### Licença
+### Licença <a name="head-Licenca"></a>
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-### Créditos
+### Créditos <a name="head-creditos"></a>
 
 A logo utilizada nesse projeto, foi retirada do site: [Flaticon](https://www.flaticon.com/br/icones-gratis/biblioteca)
