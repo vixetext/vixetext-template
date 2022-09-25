@@ -59,7 +59,7 @@ make up
 5. Você deverá abrir outro terminal e executar o seguinte comando:
 
 ```shell
-make build
+make build-doc
 ```
 
 Após fazer e execução desse comando será gerado uma pasta `build` com o arquivo compilado do seu projeto.

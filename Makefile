@@ -4,5 +4,5 @@ down:
 	docker-compose down -v
 bash:
 	docker exec -it limarka-app /bin/bash
-build:
-	docker exec -it limarka-app /bin/bash -c "limarka exec -o build"
+build-doc:
+	docker exec -it limarka-app /bin/bash -c "limarka-help"
