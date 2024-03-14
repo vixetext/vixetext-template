@@ -1,9 +1,7 @@
-# Primeiro anexo
+## Primeiro anexo
 
 \lipsum[30]
 
-
-# Segundo anexo
+## Segundo anexo
 
 \lipsum[31]
-

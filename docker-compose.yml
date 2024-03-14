@@ -6,3 +6,10 @@ services:
     command: "/bin/bash"
     volumes:
       - .:/usr/src/trabalho
+  markdownlint:
+    container_name: "markdownlint"
+    image: davidanson/markdownlint-cli2
+    tty: true
+    entrypoint: "/bin/sh"
+    volumes:
+      - .:/workdir

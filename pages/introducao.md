@@ -1,7 +1,7 @@
 # Introdução
 
-A prática cotidiana prova que o aumento do diálogo entre os diferentes setores produtivos obstaculiza a apreciação da 
-importância de alternativas às soluções ortodoxas. O cuidado em identificar pontos críticos no comprometimento entre as equipes causa impacto indireto na reavaliação do 
+A prática cotidiana prova que o aumento do diálogo entre os diferentes setores produtivos obstaculiza a apreciação da
+importância de alternativas às soluções ortodoxas. O cuidado em identificar pontos críticos no comprometimento entre as equipes causa impacto indireto na reavaliação do
 levantamento das variáveis envolvidas.
 
 É claro que a execução dos pontos do programa obstaculiza a apreciação da importância do impacto na agilidade decisória.

@@ -1,9 +1,7 @@
-# Primeiro apêndice
+## Primeiro apêndice
 
 \lipsum[50]
 
-
-# Segundo apêndice
+## Segundo apêndice
 
 \lipsum[55-57]
-

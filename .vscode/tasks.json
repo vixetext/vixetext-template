@@ -1,0 +1,58 @@
+{
+    "version": "2.0.0",
+    "presentation": {
+        "reveal": "never"
+    },
+    "tasks": [
+        {
+            "label": "Limarka Builder",
+            "type": "shell",
+            "linux": {
+                "command": "sh",
+                "args": [
+                    ".vscode/scripts/builder.sh"
+                ]
+            },
+            "osx": {
+                "command": "sh",
+                "args": [
+                    ".vscode/scripts/builder.sh",
+                ]
+            },
+            "windows": {
+                "command": ".vscode/scripts/builder.bat",
+                "args": []
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+          "label": "Markdown Lint",
+          "type": "shell",
+          "linux": {
+              "command": "sh",
+              "args": [
+                  ".vscode/scripts/lint.sh",
+              ]
+          },
+          "osx": {
+              "command": "sh",
+              "args": [
+                  ".vscode/scripts/lint.sh",
+              ]
+          },
+          "windows": {
+              "command": ".vscode/scripts/lint.bat",
+              "args": []
+          },
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "problemMatcher": []
+      },
+    ]
+}

@@ -1,0 +1,96 @@
+# Configuração do Markdownlint com todas as propriedades definidas para seus valores padrão
+
+# Estado padrão para todas as regras
+default: true
+
+# MD003/heading-style: Estilo de cabeçalho:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md003.md
+MD003:
+  # Estilo de cabeçalho
+  style: "atx"
+
+# MD004/ul-style: Estilo de lista não ordenada:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md004.md
+MD004:
+  # Estilo de lista
+  style: "dash"
+
+# MD009/no-trailing-spaces: Espaços finais:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md009.md
+MD009: false
+
+# MD013/line-length: Comprimento da linha:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md013.md
+MD013: false
+
+# MD024/no-duplicate-heading: Múltiplos cabeçalhos com o mesmo conteúdo:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md024.md
+MD024:
+  # Verificar apenas cabeçalhos irmãos
+  siblings_only: true
+
+# MD026/no-trailing-punctuation: Pontuação final no cabeçalho:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md026.md
+MD026:
+  # Caracteres de pontuação
+  punctuation: ".,;:!。，；：！？"
+
+# MD029/ol-prefix: Prefixo do item de lista ordenada:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md029.md
+MD029:
+  # Estilo de lista
+  style: "one"
+
+# MD033/no-inline-html: HTML inline:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md033.md
+MD033: true
+
+# MD034/no-bare-urls : Bare URL used : https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md034.md
+MD034: false
+
+# MD035/hr-style: Estilo de linha horizontal:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md035.md
+MD035:
+  # Estilo de linha horizontal
+  style: "consistent"
+
+# MD036/no-emphasis-as-heading: Ênfase usada em vez de um cabeçalho:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md036.md
+MD036: false
+
+# MD041/first-line-heading/first-line-h1: A primeira linha em um arquivo deve ser um cabeçalho de nível superior:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md041.md
+MD041: false
+
+# MD046/code-block-style: Estilo de bloco de código:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md046.md
+MD046:
+  # Estilo de bloco
+  style: "fenced"
+
+# MD049/emphasis-style: Estilo de ênfase:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md049.md
+MD049: false
+
+# MD051/link-fragments: Fragmentos de link devem ser válidos:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md051.md
+MD051: false
+
+# MD052/reference-links-images: Links de referência e imagens devem usar um rótulo que é definido:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md052.md
+MD052: false
+
+# MD044/proper-names: Nomes próprios devem ter a capitalização correta:
+# https://github.com/DavidAnson/markdownlint/blob/v0.33.0/doc/md044.md
+MD044:
+  # Incluir blocos de código
+  code_blocks: false
+  # Incluir elementos HTML
+  html_elements: false
+  # Lista de nomes próprios
+  names: [
+    "Ubuntu",
+    "URL",
+    "YAML",
+    "IFS",
+  ]
