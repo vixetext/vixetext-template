@@ -1,8 +1,9 @@
 <div align="center">
 
  ![limarka-template-tcc-logo](https://user-images.githubusercontent.com/28494067/192121768-6d86c159-29bb-4df1-b84b-7e8e65569c9e.png)
- # Limarka Template TCC
- 
+
+# Limarka Template TCC
+
 </div>
 
 Esse repositório é responsável por contém os arquivos do esqueleto (modelo) para iniciar a escrita de um trabalho acadêmico com o [limarka](https://github.com/abntex/limarka). Além disso, este projeto contém várias outras novidades que facilitam a escrita de um trabalho acadêmico.
@@ -14,12 +15,11 @@ Provavelmente se você chegou a utilizar o [abntex/trabalho-academico-limarka](h
 <details open>
 <summary>Principais informações</summary>
 
-* [O que esse modelo tem de diferente?](#head-intro)
-* [Como instalar e executar o modelo](#head-instalar)
-* [Documentação completa](#head-documentacao)
-* [Tecnologias e ferramentas utilizadas](#head-tecnologias)
-* [Licença](#head-licenca)
-* [Créditos](#head-creditos)
+- [O que esse modelo tem de diferente?](#head-intro)
+- [Documentação completa](#head-documentacao)
+- [Tecnologias e ferramentas utilizadas](#head-tecnologias)
+- [Licença](#head-licenca)
+- [Créditos](#head-creditos)
 
 </details>
 
@@ -36,39 +36,11 @@ Os principais recurso são:
 
 Veja esse vídeo com uma introdução rápida sobre esse template: [Limarka: como escrever um tcc em markdown](https://youtu.be/zuw0Fo1la2U)
 
-## Como instalar e executar o modelo <a name="head-instalar"></a>
-
-A maneira recomendada de instalar este projeto é seguindo estas etapas:
-
-1. Realize o clone do projeto para a sua máquina
-
-```shell
-git clone https://github.com/ReinanHS/limarka-template-tcc.git
-```
-
-2. Acessar as pastas do projeto
-3. Certifique se de ter o [docker](#head-docker) e [make](https://www.youtube.com/watch?v=a3ejgWLqelQ) instalado em sua maquina
-4. Execute os seguintes comandos:
-
-```shell
-cd limarka-template-tcc 
-make up
-```
-
-**Atenção**: Se você não tiver o comando `make` instalado em sua máquina, você pode rodar o comando:
-`docker-compose up`
-
-5. Você deverá abrir outro terminal e executar o seguinte comando:
-
-```shell
-make build-doc
-```
-
-Após fazer e execução desse comando será gerado uma pasta `build` com o arquivo compilado do seu projeto.
-
 ## Documentação completa <a name="head-documentacao"></a>
 
-Veja a documentação sobre esse modelo acessando esse [link](https://github.com/ReinanHS/limarka-template-tcc/wiki)
+Este projeto é acompanhado de uma documentação abrangente, que orienta detalhadamente a criação de um projeto do zero e a configuração do ambiente de desenvolvimento necessário para a utilização desta ferramenta. Recomendamos enfaticamente a consulta à documentação a seguir para compreender plenamente como aproveitar ao máximo os recursos oferecidos por este template:
+
+- [Clique nesse link para fazer a leitura da documentação](https://reinanhs.github.io/limarka-template-docs)
 
 ## Tecnologias e ferramentas utilizadas <a name="head-tecnologias"></a>
 
@@ -89,7 +61,7 @@ Essa é a ferramenta base para esse projeto. Você poderá encontrar uma vasta d
 
 > O Docker é uma plataforma open source que facilita a criação e administração de ambientes isolados. Ele possibilita o empacotamento de uma aplicação ou ambiente dentro de um container, se tornando portátil para qualquer outro host que contenha o Docker instalado.
 
-Com o Docker você não presissar se prebupar em configurar um ambiente. Todas essas configurações já foram feitas e estaõ no docker. 
+Com o Docker você não presissar se prebupar em configurar um ambiente. Todas essas configurações já foram feitas e estaõ no docker.
 
 **Atenção**: Para a utilizar esse repositório é recomendado fazer a instalação do docker em sua máquina, veja abaixo algumas links de ajuda:
 
