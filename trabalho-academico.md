@@ -2,6 +2,8 @@
 
 ## Motivação
 
+A escolha do tema para este TCC não foi um acaso, mas o resultado de uma jornada de descobertas, paixões e questionamentos que marcaram profundamente minha trajetória acadêmica.
+
 ## Objetivos
 
 ### Objetivo geral
@@ -91,5 +93,17 @@ Configurações de figura
 
 |configuração|descrição|
 |---|---|
-|fig.align|	Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center'|
-|out.height <br> out.width	|Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm"|
+|fig.align| Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center'|
+|out.height out.width |Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm"|
+
+## Quadros
+
+Quadro perfil: Perfil dos voluntários do experimento
+
+|Vol.|Formação acadêmica           |Experiência c/ Latex| Expeiência c/ Markdown|
+|:-:|:----------------------------:|:------------------:|:---------------------:|
+|1  |Ciência da Computação         |ShareLatex          |    Readme/Github      |
+|2  |Engenharia da Computação      |Viu prof. utilizando|         -             |
+|3  |Engenheiro elétrico (mestrando)|Utiliza para tudo  |         -             |
+
+Fonte: \citeonline{limarka}
