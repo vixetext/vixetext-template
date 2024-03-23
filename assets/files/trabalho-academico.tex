@@ -292,7 +292,25 @@ definição dos procedimentos normalmente adotados.
    \centering
    \noindent
 
-    teste
+    Exemplo: À minha família, por ser minha fonte inesgotável de amor e
+    apoio. Nos momentos de dúvida, vocês foram o farol que guiou meu
+    caminho, iluminando minhas decisões e fortalecendo meu ânimo para seguir
+    em frente. Este trabalho é também um pedaço de cada um de vocês, que,
+    com paciência e carinho, souberam entender minhas ausências e celebrar
+    cada pequena conquista.
+    
+    Aos meus amigos, verdadeiros companheiros de jornada, que dividiram
+    comigo não apenas as angústias e estresses típicos desse período, mas
+    também os sorrisos e a esperança de dias melhores. Vocês tornaram essa
+    etapa não apenas suportável, mas memorável.
+    
+    Aos meus professores e orientadores, cuja sabedoria e dedicação não só
+    direcionaram este trabalho, mas também moldaram o profissional que me
+    tornei. Agradeço pela paciência, pelos ensinamentos valiosos e,
+    principalmente, pelo incentivo em buscar sempre mais.
+    
+    Este trabalho é dedicado a vocês, que foram os pilares desta conquista.
+    Com gratidão e carinho, compartilho com cada um o sucesso deste momento.
 
    \vspace*{\fill}
 \end{dedicatoria}
@@ -442,6 +460,10 @@ dirigentes com relação às suas atribuições.
 \hypertarget{motivauxe7uxe3o}{%
 \section{Motivação}\label{motivauxe7uxe3o}}
 
+A escolha do tema para este TCC não foi um acaso, mas o resultado de uma
+jornada de descobertas, paixões e questionamentos que marcaram
+profundamente minha trajetória acadêmica.
+
 \hypertarget{objetivos}{%
 \section{Objetivos}\label{objetivos}}
 
@@ -476,9 +498,6 @@ documento.
 
 \hypertarget{como-citar-e-referenciar}{%
 \section{Como citar e referenciar}\label{como-citar-e-referenciar}}
-
-O arquivo de referências é configurado em ``configuracao.pdf'',
-utilize-o para gerenciar suas referências.
 
 Veja um exemplo de citação direta e referenciação a seguir:
 
@@ -577,26 +596,76 @@ Configurações de figura
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule
-\begin{minipage}[b]{0.47\columnwidth}\raggedright
+\begin{minipage}[b]{0.20\columnwidth}\raggedright
 configuração\strut
-\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{0.74\columnwidth}\raggedright
 descrição\strut
 \end{minipage}\tabularnewline
 \midrule
 \endhead
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
 fig.align\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-Alinhamento de graficos e figura no documento final: `left', `right', or
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Alinhamento de gráficos e figura no documento final: `left', `right', or
 `center'\strut
 \end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\raggedright
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
 out.height out.width\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
-Escala de fargura e altura da figura no documento final. Pode ser
-``\%'', ``px'', ``cm''\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Altura da figura no documento final. Pode ser ``\%'', ``px'',
+``cm''\strut
 \end{minipage}\tabularnewline
 \bottomrule
+\end{longtable}
+
+\hypertarget{quadros}{%
+\section{Quadros}\label{quadros}}
+
+\renewcommand\LTcaptype{quadro}
+\begin{longtable}[]{|c|c|c|c|}
+\caption{Perfil dos voluntários do experimento\label{perfil}}\tabularnewline
+\toprule
+Vol. & Formação acadêmica & Experiência c/ Latex & Experiência c/ Markdown\tabularnewline
+\midrule
+\endhead
+1 & Ciência da Computação & ShareLatex & Readme/Github\tabularnewline
+2 & Engenharia da Computação & Viu prof. utilizando & -\tabularnewline
+3 & Engenheiro elétrico (mestrando) & Utiliza para tudo & -\tabularnewline
+\bottomrule
+\caption*{Fonte: \citeonline{limarka}}
+\end{longtable}
+\renewcommand\LTcaptype{table}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{\$1. \label{mytable}}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright
+configuração\strut
+\end{minipage} & \begin{minipage}[b]{0.74\columnwidth}\raggedright
+descrição\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright
+configuração\strut
+\end{minipage} & \begin{minipage}[b]{0.74\columnwidth}\raggedright
+descrição\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+fig.align\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Alinhamento de gráficos e figura no documento final: `left', `right', or `center'\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+out.height out.width\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Altura da figura no documento final. Pode ser ``\%'', ``px'', ``cm''\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\caption*{Fonte: Autor.}
 \end{longtable}
 
 % ----------------------------------------------------------

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  15 MAR 2024 01:11
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  23 MAR 2024 01:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,7 +799,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Package babel Info: \l@french = using hyphenrules for portuguese
-(babel)             (\language3) on input line 353.
+(babel)             (\language3) on input line 371.
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
 Package babel Info: Importing basic data for french
 (babel)             from babel-fr.ini. Reported on input line 11.
@@ -814,7 +814,7 @@ Package babel Warning: From babel-fr.ini:
 
 ]
 Package babel Info: \l@spanish = using hyphenrules for portuguese
-(babel)             (\language3) on input line 364.
+(babel)             (\language3) on input line 382.
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing basic data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -827,7 +827,7 @@ Package babel Info: Importing basic data for spanish
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-59.
+81.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [10
@@ -841,8 +841,8 @@ File: imagens/passaro.jpg Graphic file (type bmp)
 ] [12]
 File: imagens/R/historgrama.pdf Graphic file (type pdf)
 <use imagens/R/historgrama.pdf>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 53
-9.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 55
+8.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -857,39 +857,39 @@ File: imagens/R/pizza-grafico.pdf Graphic file (type pdf)
 ] [14]
 File: imagens/R/dois-graficos.pdf Graphic file (type pdf)
 <use imagens/R/dois-graficos.pdf>
-(./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
+[15
+
+] (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
 \tf@brf=\write5
 \openout5 = `xxx-trabalho-academico.brf'.
 
-[15
-
-]
+[16]
 bibitemlist
 ) 
 AED: lastpage setting LastPage
-[16
+[17
 
 ]
 \tf@toc=\write6
 \openout6 = `xxx-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 633.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 633.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 702.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 702.
 (./xxx-trabalho-academico.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 633.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 633.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 702.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 702.
 Package rerunfilecheck Info: File `xxx-trabalho-academico.brf' has not changed.
 
-(rerunfilecheck)             Checksum: 2E66A3E7C743656A5FFDBBD76465B755;137.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 633.
+(rerunfilecheck)             Checksum: 4FDFB0BAC84C8D787D7C3BBB8F1F7F82;178.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 702.
  ) 
 Here is how much of TeX's memory you used:
- 17603 strings out of 481788
- 271294 string characters out of 5937331
- 727035 words of memory out of 5000000
- 34320 multiletter control sequences out of 15000+600000
+ 17609 strings out of 481788
+ 271337 string characters out of 5937331
+ 730035 words of memory out of 5000000
+ 34326 multiletter control sequences out of 15000+600000
  554522 words of font info for 50 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  42i,11n,45p,279b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on xxx-trabalho-academico.xdv (17 pages, 28228 bytes).
+Output written on xxx-trabalho-academico.xdv (18 pages, 32456 bytes).
