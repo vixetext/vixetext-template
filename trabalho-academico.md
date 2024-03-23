@@ -91,19 +91,28 @@ Fonte: Autora.
 
 Configurações de figura
 
-|configuração|descrição|
-|---|---|
-|fig.align| Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center'|
-|out.height out.width |Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm"|
+| configuração         | descrição                                                                         |
+|----------------------|-----------------------------------------------------------------------------------|
+| fig.align            | Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center' |
+| out.height out.width | Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm" |
 
 ## Quadros
 
 Quadro perfil: Perfil dos voluntários do experimento
 
-|Vol.|Formação acadêmica           |Experiência c/ Latex| Expeiência c/ Markdown|
-|:-:|:----------------------------:|:------------------:|:---------------------:|
-|1  |Ciência da Computação         |ShareLatex          |    Readme/Github      |
-|2  |Engenharia da Computação      |Viu prof. utilizando|         -             |
-|3  |Engenheiro elétrico (mestrando)|Utiliza para tudo  |         -             |
+| Vol. |       Formação acadêmica        | Experiência c/ Latex | Expeiência c/ Markdown |
+|:----:|:-------------------------------:|:--------------------:|:----------------------:|
+|  1   |      Ciência da Computação      |      ShareLatex      |     Readme/Github      |
+|  2   |    Engenharia da Computação     | Viu prof. utilizando |           -            |
+|  3   | Engenheiro elétrico (mestrando) |  Utiliza para tudo   |           -            |
 
 Fonte: \citeonline{limarka}
+
+| configuração         | descrição                                                                         |
+|----------------------|-----------------------------------------------------------------------------------|
+| fig.align            | Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center' |
+| out.height out.width | Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm" |
+
+: $1. \label{mytable}
+
+Fonte: Autor.
