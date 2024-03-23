@@ -18,7 +18,7 @@ Apresentação do objetivo geral.
 
 <!--
 Isto é um comentário, mesma sintaxe do HTML. Para conhecer a sintaxe
-do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
+do Limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 -->
 
 # Como utilizar recursos do limarka
@@ -28,9 +28,6 @@ do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe
 Cada capítulo inicia automaticamente em página ímpar (em conformidade com as Normas). Por isso que existem várias páginas em branco nesse documento.
 
 ## Como citar e referenciar
-
-O arquivo de referências é configurado em "configuracao.pdf", utilize-o
-para gerenciar suas referências.
 
 Veja um exemplo de citação direta e referenciação a seguir:
 
@@ -93,14 +90,14 @@ Configurações de figura
 
 | configuração         | descrição                                                                         |
 |----------------------|-----------------------------------------------------------------------------------|
-| fig.align            | Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center' |
-| out.height out.width | Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm" |
+| fig.align            | Alinhamento de gráficos e figura no documento final: 'left', 'right', or 'center' |
+| out.height out.width | Altura da figura no documento final. Pode ser "%", "px", "cm"                     |
 
 ## Quadros
 
 Quadro perfil: Perfil dos voluntários do experimento
 
-| Vol. |       Formação acadêmica        | Experiência c/ Latex | Expeiência c/ Markdown |
+| Vol. |       Formação acadêmica        | Experiência c/ Latex | Experiência c/ Markdown |
 |:----:|:-------------------------------:|:--------------------:|:----------------------:|
 |  1   |      Ciência da Computação      |      ShareLatex      |     Readme/Github      |
 |  2   |    Engenharia da Computação     | Viu prof. utilizando |           -            |
@@ -110,8 +107,8 @@ Fonte: \citeonline{limarka}
 
 | configuração         | descrição                                                                         |
 |----------------------|-----------------------------------------------------------------------------------|
-| fig.align            | Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center' |
-| out.height out.width | Escala de fargura e altura da figura no documento final. Pode ser "%", "px", "cm" |
+| fig.align            | Alinhamento de gráficos e figura no documento final: 'left', 'right', or 'center' |
+| out.height out.width | Altura da figura no documento final. Pode ser "%", "px", "cm" |
 
 : $1. \label{mytable}
 

@@ -7,7 +7,6 @@
 Modelo de trabalho acadêmico para utilizar com o limarka. A nível organizacional, o entendimento das metas propostas representa uma abertura para a
 melhoria das condições financeiras e administrativas exigidas.
 
-  
 ![Author](https://img.shields.io/badge/Autor-Digite%20seu%20nome-green)
 ![Orientador](https://img.shields.io/badge/Orientador-Digite%20o%20nome-green)
 ![Data](https://img.shields.io/badge/Publica%C3%A7%C3%A3o-21%2C%20Jun%20de%202022-green)
@@ -39,7 +38,7 @@ In this sense, the growing influence of the media has an indirect impact on the 
 
 Aos professores, pelas correções e ensinamentos que me permitiram apresentar um melhor desempenho no meu processo de formação profissional ao longo do curso.
 
-#### [Ver publicação](https://reinanhs.github.io/limarka-template-tcc/assets/files/titulo-do-trabalho.pdf)
+### [Ver publicação](https://reinanhs.github.io/limarka-template-tcc/assets/files/titulo-do-trabalho.pdf)
 
 <hr>
 

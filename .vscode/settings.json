@@ -2,5 +2,25 @@
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnSave": true
-  }
+  },
+  "cSpell.language": "pt_BR,pt,en",
+  "cSpell.words": [
+    "abntex",
+    "bibtex",
+    "citeonline",
+    "limarka",
+    "Markdownlint"
+  ],
+  "cSpell.ignoreRegExpList": [
+    "@import\\('([^']+)'\\)",
+    "{#(\\w+)\\s+escala=(\\d+(\\.\\d+)?)}",
+    "\\\\ref\\{(\\w+)\\}",
+    "\\\\autoref\\{(\\w+)\\}",
+    "\\\\label\\{(\\w+)\\}",
+  ],
+  "cSpell.ignorePaths": [
+    ".vscode",
+    "templates",
+    "configuracao.yaml"
+  ],
 }
