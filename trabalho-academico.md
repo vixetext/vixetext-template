@@ -86,12 +86,19 @@ Fonte: Autora.
 
 ## Tabelas
 
-Configurações de figura
+: Cursos técnicos integrados ao Ensino Médio no IFS \label{tabela_cursos}
 
-| configuração         | descrição                                                                         |
-|----------------------|-----------------------------------------------------------------------------------|
-| fig.align            | Alinhamento de gráficos e figura no documento final: 'left', 'right', or 'center' |
-| out.height out.width | Altura da figura no documento final. Pode ser "%", "px", "cm"                     |
+| Curso        | Descrição                                                                    | Duração |
+|--------------|------------------------------------------------------------------------------|---------|
+| Enfermagem   | Capacita o profissional para prestar cuidados de enfermagem.                 | 3 anos  |
+| Informática  | Forma o profissional para atuar na instalação, configuração de computadores. | 3 anos  |
+| Agropecuária | Habilita o profissional para atuar na gestão de propriedades rurais.         | 3 anos  |
+
+Fonte: Autor.
+
+O Instituto Federal de Sergipe (IFS) oferece diversos cursos técnicos integrados ao ensino médio, que combinam a formação básica com a profissionalizante. Essa modalidade de ensino é uma excelente opção para quem deseja se preparar para o mercado de trabalho ou ingressar no ensino superior.
+
+A \autoref{tabela_cursos} apresenta alguns dos cursos técnicos integrados ao ensino médio oferecidos pelo IFS, com informações sobre a descrição do curso, a duração e as habilidades desenvolvidas.
 
 ## Quadros
 
@@ -104,12 +111,3 @@ Quadro perfil: Perfil dos voluntários do experimento
 |  3   | Engenheiro elétrico (mestrando) |  Utiliza para tudo   |           -            |
 
 Fonte: \citeonline{limarka}
-
-| configuração         | descrição                                                                         |
-|----------------------|-----------------------------------------------------------------------------------|
-| fig.align            | Alinhamento de gráficos e figura no documento final: 'left', 'right', or 'center' |
-| out.height out.width | Altura da figura no documento final. Pode ser "%", "px", "cm" |
-
-: $1. \label{mytable}
-
-Fonte: Autor.
