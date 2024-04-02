@@ -102,7 +102,7 @@ A \autoref{tabela_cursos} apresenta alguns dos cursos técnicos integrados ao en
 
 ## Quadros
 
-Quadro perfil: Perfil dos voluntários do experimento
+Quadro quadro_exemplo: Perfil dos voluntários do experimento
 
 | Vol. |       Formação acadêmica        | Experiência c/ Latex | Experiência c/ Markdown |
 |:----:|:-------------------------------:|:--------------------:|:----------------------:|
@@ -111,3 +111,5 @@ Quadro perfil: Perfil dos voluntários do experimento
 |  3   | Engenheiro elétrico (mestrando) |  Utiliza para tudo   |           -            |
 
 Fonte: \citeonline{limarka}
+
+O \autoref{quadro_exemplo}, apresenta informações detalhadas sobre os participantes de um estudo. Ele é um exemplo de como dados podem ser organizados de forma clara e concisa, facilitando a leitura e a compreensão.
