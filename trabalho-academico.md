@@ -113,3 +113,20 @@ Quadro quadro_exemplo: Perfil dos voluntários do experimento
 Fonte: \citeonline{limarka}
 
 O \autoref{quadro_exemplo}, apresenta informações detalhadas sobre os participantes de um estudo. Ele é um exemplo de como dados podem ser organizados de forma clara e concisa, facilitando a leitura e a compreensão.
+
+## Expressões matemáticas
+
+Este guia fornece uma introdução rápida à criação de expressões matemáticas, com exemplos práticos para ilustrar os principais comandos e recursos.
+
+Exemplos:
+
+- **Equação do segundo grau**: \begin{math} ax^2 + bx + c = 0 \end{math}
+- **Integral definida**: \begin{math} \int_a^b f(x) \, dx \end{math}
+
+Exemplos de array:
+
+\begin{array}{c|c}
+  1 & 2 \\
+  \hline
+  3 & 4
+\end{array}
