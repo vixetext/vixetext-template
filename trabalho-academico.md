@@ -130,3 +130,31 @@ Exemplos de array:
   \hline
   3 & 4
 \end{array}
+
+## Citação direta curta
+
+A expressão ‘furiosa’ dessa estátua de que fala Rabelais, corresponde também à realidade.” \cite[p. 5]{abntex2cite}.
+
+## Citação direta longa
+
+> A ‘norma’ 6023:2000 (2) é complicada e cheia de inconsistências. Jamais será
+possível gerar um estilo bibtex totalmente consistente com a ‘norma’, até porque
+nem a ‘norma’ é compatível com ela mesma. Um bom estilo bibliográfico deve
+ter uma linha lógica para formatação de referências. Assim, com alguns poucos
+exemplos, qualquer pessoa poderia deduzir os casos omissos. Nesse sentido, a
+‘norma’ 6023 trafega pela contra-mão. É quase impossível deduzir sua linha lógica.
+O problema mais grave, no entanto, fica pela maneira de organizar nomes. A ABNT
+quebrou o sobrenome em duas partes. Normalmente se fala apenas em “*last name*”,
+mas agora temos o “*last last name*” graças à ABNT. \cite[p. 5]{abntex2cite}.
+
+## Citação indireta
+
+A citação indireta é uma forma poderosa para integrar as ideias de outros autores em seu trabalho de forma criativa e original. Ela permite que você apresente as ideias e argumentos de outro autor com suas próprias palavras, seja através de um resumo, tradução ou interpretação.
+
+A citação no texto:
+
+Segundo \citeonline{abntex2cite}, rede de marketing é o resultado do marketing de relacionamento a partir da construção de um ativo insubstituível.
+
+O texto original:
+
+> [...] o resultado do marketing de relacionamento é a construção de um ativo insubstituível da empresa chamado rede de marketing.

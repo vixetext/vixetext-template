@@ -15,7 +15,7 @@ Nesta seção, oferecemos uma lista cuidadosamente elaborada que contém as info
 - [Formatação de parágrafos e inserção de novas linhas](./guia-iniciantes/paragrafos)
 - [Aplicação de negrito, itálico e sublinhado](./guia-iniciantes/negrito-italico-sublinhado)
 - [Criação de listas](./guia-iniciantes/listas)
-- [Inserção de equações matemáticas](./guia-iniciantes/matematica)
+- [Inserção de equações matemáticas](./guia-iniciantes/expressoes-matematicas)
 - [Adição de bibliografias e referências](./guia-iniciantes/bibliografias-e-referencias)
 - [Inclusão de imagens e figuras](./guia-iniciantes/figuras)
 - [Criação e formatação de tabelas](./guia-iniciantes/tabelas)
