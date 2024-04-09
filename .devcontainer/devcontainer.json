@@ -1,0 +1,7 @@
+{
+  "name": "limarka-template-tcc",
+  "image": "reinanhs/limarka-help:1.0.0",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+  }
+}
