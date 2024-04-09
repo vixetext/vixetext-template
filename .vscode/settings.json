@@ -9,7 +9,8 @@
     "bibtex",
     "citeonline",
     "limarka",
-    "Markdownlint"
+    "Markdownlint",
+    "pmatrix"
   ],
   "cSpell.ignoreRegExpList": [
     "@import\\('([^']+)'\\)",

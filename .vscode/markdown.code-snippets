@@ -2,7 +2,7 @@
   "Exemplo de sintaxe para criar quadros": {
     "prefix": "lt:quadro",
     "body": [
-      "Quadro de exemplo: $1",
+      "Quadro nome_exemplo: $1",
       "",
       "|$2  |$3                             |$4                  | $5                    |",
       "|:-: |:-----------------------------:|:------------------:|:---------------------:|",
@@ -18,12 +18,12 @@
   "Exemplo de sintaxe para criar tabelas": {
     "prefix": "lt:tabela",
     "body": [
+      ": $1. \\label{mytable}",
+      "",
       "| configuração         | descrição                                                                         |",
       "|----------------------|-----------------------------------------------------------------------------------|",
       "| fig.align            | Alinhamento de graficos e figura no documento final: 'left', 'right', or 'center' |",
       "| out.height out.width | Escala de fargura e altura da figura no documento final. Pode ser \"%\", \"px\", \"cm\" |",
-      "",
-      ": $1. \\label{mytable}",
       "",
       "Fonte: Autor."
     ],

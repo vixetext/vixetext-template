@@ -86,16 +86,23 @@ Fonte: Autora.
 
 ## Tabelas
 
-Configurações de figura
+: Cursos técnicos integrados ao Ensino Médio no IFS \label{tabela_cursos}
 
-| configuração         | descrição                                                                         |
-|----------------------|-----------------------------------------------------------------------------------|
-| fig.align            | Alinhamento de gráficos e figura no documento final: 'left', 'right', or 'center' |
-| out.height out.width | Altura da figura no documento final. Pode ser "%", "px", "cm"                     |
+| Curso        | Descrição                                                                    | Duração |
+|--------------|------------------------------------------------------------------------------|---------|
+| Enfermagem   | Capacita o profissional para prestar cuidados de enfermagem.                 | 3 anos  |
+| Informática  | Forma o profissional para atuar na instalação, configuração de computadores. | 3 anos  |
+| Agropecuária | Habilita o profissional para atuar na gestão de propriedades rurais.         | 3 anos  |
+
+Fonte: Autor.
+
+O Instituto Federal de Sergipe (IFS) oferece diversos cursos técnicos integrados ao ensino médio, que combinam a formação básica com a profissionalizante. Essa modalidade de ensino é uma excelente opção para quem deseja se preparar para o mercado de trabalho ou ingressar no ensino superior.
+
+A \autoref{tabela_cursos} apresenta alguns dos cursos técnicos integrados ao ensino médio oferecidos pelo IFS, com informações sobre a descrição do curso, a duração e as habilidades desenvolvidas.
 
 ## Quadros
 
-Quadro perfil: Perfil dos voluntários do experimento
+Quadro quadro_exemplo: Perfil dos voluntários do experimento
 
 | Vol. |       Formação acadêmica        | Experiência c/ Latex | Experiência c/ Markdown |
 |:----:|:-------------------------------:|:--------------------:|:----------------------:|
@@ -105,11 +112,49 @@ Quadro perfil: Perfil dos voluntários do experimento
 
 Fonte: \citeonline{limarka}
 
-| configuração         | descrição                                                                         |
-|----------------------|-----------------------------------------------------------------------------------|
-| fig.align            | Alinhamento de gráficos e figura no documento final: 'left', 'right', or 'center' |
-| out.height out.width | Altura da figura no documento final. Pode ser "%", "px", "cm" |
+O \autoref{quadro_exemplo}, apresenta informações detalhadas sobre os participantes de um estudo. Ele é um exemplo de como dados podem ser organizados de forma clara e concisa, facilitando a leitura e a compreensão.
 
-: $1. \label{mytable}
+## Expressões matemáticas
 
-Fonte: Autor.
+Este guia fornece uma introdução rápida à criação de expressões matemáticas, com exemplos práticos para ilustrar os principais comandos e recursos.
+
+Exemplos:
+
+- **Equação do segundo grau**: \begin{math} ax^2 + bx + c = 0 \end{math}
+- **Integral definida**: \begin{math} \int_a^b f(x) \, dx \end{math}
+
+Exemplos de array:
+
+\begin{array}{c|c}
+  1 & 2 \\
+  \hline
+  3 & 4
+\end{array}
+
+## Citação direta curta
+
+A expressão ‘furiosa’ dessa estátua de que fala Rabelais, corresponde também à realidade.” \cite[p. 5]{abntex2cite}.
+
+## Citação direta longa
+
+> A ‘norma’ 6023:2000 (2) é complicada e cheia de inconsistências. Jamais será
+possível gerar um estilo bibtex totalmente consistente com a ‘norma’, até porque
+nem a ‘norma’ é compatível com ela mesma. Um bom estilo bibliográfico deve
+ter uma linha lógica para formatação de referências. Assim, com alguns poucos
+exemplos, qualquer pessoa poderia deduzir os casos omissos. Nesse sentido, a
+‘norma’ 6023 trafega pela contra-mão. É quase impossível deduzir sua linha lógica.
+O problema mais grave, no entanto, fica pela maneira de organizar nomes. A ABNT
+quebrou o sobrenome em duas partes. Normalmente se fala apenas em “*last name*”,
+mas agora temos o “*last last name*” graças à ABNT. \cite[p. 5]{abntex2cite}.
+
+## Citação indireta
+
+A citação indireta é uma forma poderosa para integrar as ideias de outros autores em seu trabalho de forma criativa e original. Ela permite que você apresente as ideias e argumentos de outro autor com suas próprias palavras, seja através de um resumo, tradução ou interpretação.
+
+A citação no texto:
+
+Segundo \citeonline{abntex2cite}, rede de marketing é o resultado do marketing de relacionamento a partir da construção de um ativo insubstituível.
+
+O texto original:
+
+> [...] o resultado do marketing de relacionamento é a construção de um ativo insubstituível da empresa chamado rede de marketing.
