@@ -20,8 +20,12 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Dois gráficos R juntos}}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Tabelas}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Quadros}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Quadros}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Expressões matemáticas}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Citação direta curta}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Citação direta longa}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Citação indireta}{17}{section.4.6}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{17}{section*.15}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{18}{section*.15}%

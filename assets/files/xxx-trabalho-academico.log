@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  23 MAR 2024 01:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  9 APR 2024 01:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,6 +707,9 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 \LTcapright=\skip274
 ) (/usr/share/texlive/texmf-dist/tex/latex/shipunov/boldline.sty
 Package: boldline 2008/02/04 v0.2 Adjust line width in tables
+) (./latexcustomizacao.sty
+Package: latexcustomizacao 2017 Criacao desta customizacao do abnTeX2
+Package: latexcustomizacao 2017 Criacao desta customizacao do abnTeX2
 ) (./xxx-trabalho-academico.aux)
 \openout1 = `xxx-trabalho-academico.aux'.
 
@@ -772,7 +775,10 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
-) [1
+)
+File: imagens/logo.png Graphic file (type bmp)
+<imagens/logo.png>
+[1
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -799,7 +805,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Package babel Info: \l@french = using hyphenrules for portuguese
-(babel)             (\language3) on input line 371.
+(babel)             (\language3) on input line 356.
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
 Package babel Info: Importing basic data for french
 (babel)             from babel-fr.ini. Reported on input line 11.
@@ -814,7 +820,7 @@ Package babel Warning: From babel-fr.ini:
 
 ]
 Package babel Info: \l@spanish = using hyphenrules for portuguese
-(babel)             (\language3) on input line 382.
+(babel)             (\language3) on input line 367.
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing basic data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -827,7 +833,7 @@ Package babel Info: Importing basic data for spanish
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-81.
+66.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [10
@@ -841,8 +847,8 @@ File: imagens/passaro.jpg Graphic file (type bmp)
 ] [12]
 File: imagens/R/historgrama.pdf Graphic file (type pdf)
 <use imagens/R/historgrama.pdf>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 55
-8.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 54
+3.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -857,39 +863,79 @@ File: imagens/R/pizza-grafico.pdf Graphic file (type pdf)
 ] [14]
 File: imagens/R/dois-graficos.pdf Graphic file (type pdf)
 <use imagens/R/dois-graficos.pdf>
+
+Overfull \hbox (4.24286pt too wide) in paragraph at lines 588--589
+[]\T1/ptm/m/n/12 Duração|  
+ []
+
+
+Overfull \hbox (4.24286pt too wide) in paragraph at lines 598--599
+[]\T1/ptm/m/n/12 Duração|  
+ []
+
+
+Overfull \hbox (2.82721pt too wide) in paragraph at lines 603--604
+[]\T1/ptm/m/n/12 Enfermagem|  
+ []
+
+
+Overfull \hbox (5.71922pt too wide) in paragraph at lines 617--618
+[]\T1/ptm/m/n/12 Agropecuária|  
+ []
+
 [15
 
-] (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.681 \begin{array}{c|c}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.685 \end{array}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[16] (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
 \tf@brf=\write5
 \openout5 = `xxx-trabalho-academico.brf'.
 
-[16]
+[17]
 bibitemlist
 ) 
 AED: lastpage setting LastPage
-[17
+[18
 
 ]
 \tf@toc=\write6
 \openout6 = `xxx-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 702.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 702.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 762.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 762.
 (./xxx-trabalho-academico.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 702.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 702.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 762.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 762.
 Package rerunfilecheck Info: File `xxx-trabalho-academico.brf' has not changed.
 
-(rerunfilecheck)             Checksum: 4FDFB0BAC84C8D787D7C3BBB8F1F7F82;178.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 702.
+(rerunfilecheck)             Checksum: B71A129C24C8C3D298E3E60CACFF6B1E;322.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
  ) 
 Here is how much of TeX's memory you used:
- 17609 strings out of 481788
- 271337 string characters out of 5937331
- 730035 words of memory out of 5000000
- 34326 multiletter control sequences out of 15000+600000
+ 17639 strings out of 481788
+ 271856 string characters out of 5937331
+ 729035 words of memory out of 5000000
+ 34349 multiletter control sequences out of 15000+600000
  554522 words of font info for 50 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 42i,11n,45p,279b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,45p,279b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on xxx-trabalho-academico.xdv (18 pages, 32456 bytes).
+Output written on xxx-trabalho-academico.xdv (19 pages, 39296 bytes).
