@@ -11,7 +11,7 @@ Bem-vindo à documentação do template para a criação de trabalhos de conclus
 
 Nesta seção, oferecemos uma lista cuidadosamente elaborada que contém as informações essenciais para começar a criar artigos científicos usando o nosso template. Para uma orientação mais específica, considere os seguintes tópicos:
 
-- [Como criar seu primeiro documento usando o template Limarka](./guia-iniciantes/como-criar-seu-primeiro-documento-usando-o-template-limarka)
+- [Como criar seu primeiro documento usando o template Limarka](./guia-instalacao/)
 - [Formatação de parágrafos e inserção de novas linhas](./guia-iniciantes/paragrafos)
 - [Aplicação de negrito, itálico e sublinhado](./guia-iniciantes/negrito-italico-sublinhado)
 - [Criação de listas](./guia-iniciantes/listas)
