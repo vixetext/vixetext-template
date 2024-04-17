@@ -12,14 +12,14 @@ Bem-vindo à documentação do template para a criação de trabalhos de conclus
 Nesta seção, oferecemos uma lista cuidadosamente elaborada que contém as informações essenciais para começar a criar artigos científicos usando o nosso template. Para uma orientação mais específica, considere os seguintes tópicos:
 
 - [Como criar seu primeiro documento usando o template Limarka](./guia-instalacao/)
-- [Formatação de parágrafos e inserção de novas linhas](./guia-iniciantes/paragrafos)
-- [Aplicação de negrito, itálico e sublinhado](./guia-iniciantes/negrito-italico-sublinhado)
-- [Criação de listas](./guia-iniciantes/listas)
-- [Inserção de equações matemáticas](./guia-iniciantes/expressoes-matematicas)
-- [Adição de bibliografias e referências](./guia-iniciantes/bibliografias-e-referencias)
-- [Inclusão de imagens e figuras](./guia-iniciantes/figuras)
-- [Criação e formatação de tabelas](./guia-iniciantes/tabelas)
-- [Uso de quadros explicativos](./guia-iniciantes/quadros)
+- [Formatação de parágrafos e inserção de novas linhas](./guia-elementos/paragrafos)
+- [Aplicação de negrito, itálico e sublinhado](./guia-elementos/negrito-italico-sublinhado)
+- [Criação de listas](./guia-elementos/listas)
+- [Inserção de equações matemáticas](./guia-elementos/expressoes-matematicas)
+- [Adição de bibliografias e referências](./guia-elementos/bibliografias-e-referencias)
+- [Inclusão de imagens e figuras](./guia-elementos/figuras)
+- [Criação e formatação de tabelas](./guia-elementos/tabelas)
+- [Uso de quadros explicativos](./guia-elementos/quadros)
 
 ## Guias recomendados
 
