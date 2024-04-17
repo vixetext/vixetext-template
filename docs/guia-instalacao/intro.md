@@ -5,7 +5,7 @@ slug: /guia-instalacao/
 
 # Instalação do template
 
-Este documento oferece instruções detalhadas para a instalação e configuração do template destinado à criação de documentos acadêmicos. Ele é elaborado para usuários que desejam utilizar este template para desenvolver ou redigir seus trabalhos no ambiente GitLab ou localmente em suas máquinas.
+Este documento oferece instruções detalhadas para a instalação e configuração do template destinado à criação de documentos acadêmicos. Ele é elaborado para usuários que desejam utilizar este template para desenvolver ou redigir seus trabalhos no ambiente Github ou localmente em suas máquinas.
 
 ## Pré-requisitos
 
