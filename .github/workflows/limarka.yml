@@ -2,8 +2,8 @@ name: Limarka Workflow
 
 on:
   push:
-    branches: [ "master" ]
- 
+    branches: ["master"]
+
 jobs:
   markdown-lint:
     name: Validation files
@@ -36,7 +36,6 @@ jobs:
           mkdir -p dist
           mv build/* ./dist/
           ls ./dist
-
       - name: Archive limarka artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -44,8 +43,53 @@ jobs:
           path: dist
           retention-days: 1
 
+  build-marp:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Ensure build dir exists
+        run: mkdir -p dist-slide
+
+      - name: Dowload theme
+        run: wget https://raw.githubusercontent.com/reinanhs/marp-theme-academic/main/themes/academic.css
+
+      - name: Marp Build (HTML)
+        uses: docker://marpteam/marp-cli:v3.3.0
+        with:
+          args: slide-deck.md --theme academic.css -o dist-slide/xxx-slide.html
+        env:
+          MARP_USER: root:root
+          LANG: "pt_BR.UTF-8"
+
+      - name: Marp Build (PDF)
+        uses: docker://marpteam/marp-cli:v3.3.0
+        with:
+          args: slide-deck.md --theme academic.css --allow-local-files -o dist-slide/xxx-slide.pdf
+        env:
+          MARP_USER: root:root
+          LANG: "pt_BR.UTF-8"
+
+      - name: Marp Build (PPTX)
+        uses: docker://marpteam/marp-cli:v3.3.0
+        with:
+          args: slide-deck.md --theme academic.css --allow-local-files -o dist-slide/xxx-slide.pptx
+        env:
+          MARP_USER: root:root
+          LANG: "pt_BR.UTF-8"
+
+      - name: Archive marp artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-marp
+          path: dist-slide
+          retention-days: 1
+
   build-page:
-    needs: build-limarka
+    needs: [build-limarka, build-marp]
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -54,6 +98,29 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-limarka
+
+      - name: Instalação do ghostscript
+        run: |
+            sudo apt-get update
+            sudo apt-get install -y ghostscript
+
+      - name: Debug
+        run: ls -al
+
+      - name: Otimização do arquivo em PDF
+        run: ps2pdf -dPDFSETTINGS=/printer xxx-trabalho-academico.pdf xxx-trabalho-academico-printer.pdf
+
+      - name: Otimização do arquivo em PDF
+        run: |
+          echo "Comparação inicial" && ls -al | grep .pdf
+          rm xxx-trabalho-academico.pdf
+          mv xxx-trabalho-academico-printer.pdf xxx-trabalho-academico.pdf
+          echo "Comparação final" && ls -al | grep .pdf
+
+      - name: Download slide artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-marp
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
@@ -70,8 +137,16 @@ jobs:
             cp data/xxx-* source/assets/files/
             cp data/pages/*.md source/_pages
             vendor/bin/jigsaw build
+            mv build_local/assets/files/xxx-slide/index.html build_local/slide.html
+            rm build_local/assets/files/xxx-slide
             mkdir -p data/build
             cp build_local/* data/build -r
+      - name: Alteração do nome dos botões
+        run: |
+          ls -al build
+          sudo sed -i '0,/Visualizar PDF/s//Visualizar Slide/' build/index.html
+          sudo sed -i '0,/Visualizar PDF/s//Visualizar Artigo/' build/index.html
+          sudo sed -i "s|location.href = 'https://reinanhs.github.io/limarka-template-tcc/assets/files/xxx-slide.pdf'|location.href = 'https://reinanhs.github.io/limarka-template-tcc/slide'|" build/index.html
       - name: Archive limarka artifacts
         uses: actions/upload-artifact@v3
         with:
