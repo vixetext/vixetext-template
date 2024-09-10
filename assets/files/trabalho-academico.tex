@@ -99,10 +99,10 @@
 % ---
 \titulo{Título do trabalho}
 \autor{Nome do autor}
-\data{2019}
+\data{2024}
 \local{Cidade - UF}
-\orientador{Nome-do-Orientador}
-\coorientador{}
+\orientador{Prof.~Dr.~Nome Do Orientador}
+\coorientador{Prof.~Nome Do Coorientador}
 \instituicao{%
   Universidade/Faculdade do Brasil
   \par
@@ -114,8 +114,10 @@
 % o nome da instituição e a área de concentração.
 % Esse texto irá compor a Folha de Rosto e Folha de Aprovação.
 \preambulo{
-O empenho em analisar a revolução dos costumes exige a precisão e a
-definição dos procedimentos normalmente adotados.
+Trabalho de Conclusão de Curso apresentado ao Curso de Graduação em
+Sistemas de Informação do Campus Lagarto do Instituto Federal de
+Educação, Ciência e Tecnologia, como requisito parcial à obtenção do
+grau de bacharel em Sistemas de Informação.
 \newline\textbf{Área de concentração}: Computação.
 }%% fim do preambulo
 
@@ -281,24 +283,52 @@ definição dos procedimentos normalmente adotados.
 
 
 % ---
-% Sem Folha de aprovação
+% Folha de aprovação gerada
 % ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3).
+% Este modelo será utilizado antes da aprovação do trabalho.
+
+\begin{folhadeaprovacao}
+
+  \begin{center}
+    {\ABNTEXchapterfont\large\imprimirautor}
+
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+
+    \imprimirpreambulo
+
+    \end{minipage}%
+    \vspace*{\fill}
+   \end{center}
+
+   Monografia aprovada. \imprimirlocal, xx de novembro de xxxx de  de 2024:
+
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador}
+   \assinatura{\textbf{Prof.~Nome Do Coorientador} \\ Coorientador}
+   \assinatura{\textbf{Prof.~Nome Do Convidado} \\ Convidado}
+   \assinatura{\textbf{Prof.~Nome Do Convidado 2} \\ Convidado}
+
+   \begin{center}
+    \vspace*{0.5cm}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+  \end{center}
+
+\end{folhadeaprovacao}
 % ---
 % ---
 % Dedicatória
-% ---
-\begin{dedicatoria}
-   \vspace*{\fill}
-   \centering
-   \noindent
-
-    Cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado
-    sem cochilar e fazendo pose. Morbi viverra placerat justo, vel pharetra
-    turpis. Interagi no mé, cursus quis, vehicula ac nisi. Ô gente finis,
-    pode baixar uma ampolis que hoje é sexta-feris!
-
-   \vspace*{\fill}
-\end{dedicatoria}
 % ---
 % ---
 % Agradecimentos
@@ -329,7 +359,8 @@ diferentes setores produtivos promove a alavancagem das posturas dos
   uma abertura para a melhoria das condições financeiras e administrativas
   exigidas.
 
- \textbf{Palavras-chave}: Markup Language, Markdown, Normas da ABNT, Latex, Limarka
+ \textbf{Palavras-chave}: Limarka, Markdown, Automação, Marp, Ferramenta, Aprimoramento e
+Produtividade
 \end{resumo}
 
 
@@ -347,36 +378,19 @@ diferentes setores produtivos promove a alavancagem das posturas dos
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Keywords}: 
+   \textbf{Keywords}: Limarka, Markdown, Automation, Marp, Tool, Improvement and Productivity
  \end{otherlanguage*}
 \end{resumo}
 
-% resumo em francês 
-\begin{resumo}[Résumé]
- \begin{otherlanguage*}{french}
-    At the organizational level, understanding the proposed goals represents
-    an opening for the improvement of the required financial and
-    administrative conditions.
- 
-   \textbf{Mots-clés}: 
- \end{otherlanguage*}
-\end{resumo}
 
-% resumo em espanhol
-\begin{resumo}[Resumen]
- \begin{otherlanguage*}{spanish}
-   A nivel organizacional, la comprensión de las metas propuestas
-   representa una apertura para la mejora de las condiciones financieras y
-   administrativas requeridas.
-  
-   \textbf{Palabras clave}: 
- \end{otherlanguage*}
-\end{resumo}
 % ---
 
 % ---
-% Lista de ilustrações (opcional): não utilizando.
+% Lista de ilustrações (opcional)
 % ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
 
 
 % ---
@@ -394,6 +408,13 @@ diferentes setores produtivos promove a alavancagem das posturas dos
 % ---
 \begin{siglas}
   \item[ABNT] Associação Brasileira de Normas Técnicas
+  \item[API] Application Programming Interface
+  \item[BSI] Bacharelado em Sistemas de Informação
+  \item[CD] Continuous Deployment/Delivery
+  \item[CI] Continuous Integration
+  \item[CLI] Command Line Interface
+  \item[CSS] Cascading Style Sheets
+  \item[VS Code] Visual Studio Code
 \end{siglas}
 % ---
 
@@ -420,55 +441,347 @@ diferentes setores produtivos promove a alavancagem das posturas dos
 \hypertarget{introduuxe7uxe3o}{%
 \chapter{Introdução}\label{introduuxe7uxe3o}}
 
-A prática cotidiana prova que o aumento do diálogo entre os diferentes
-setores produtivos obstaculiza a apreciação da importância de
-alternativas às soluções ortodoxas. O cuidado em identificar pontos
-críticos no comprometimento entre as equipes causa impacto indireto na
-reavaliação do levantamento das variáveis envolvidas.
+Este é um texto de exemplo criado para demonstrar como um parágrafo pode
+ser estruturado. Em um texto de exemplo, é importante incluir frases que
+façam sentido e que estejam bem conectadas. Este texto de exemplo serve
+para ilustrar a construção de um parágrafo coeso e claro. De acordo com
+\citeonline{sicrano}, um texto de exemplo criado para demonstrar como um
+parágrafo pode ser estruturado. Em um texto de exemplo, é importante
+incluir frases que façam sentido e que estejam bem conectadas. Este
+texto de exemplo serve para ilustrar a construção de um parágrafo coeso
+e claro.
 
-É claro que a execução dos pontos do programa obstaculiza a apreciação
-da importância do impacto na agilidade decisória. Gostaria de enfatizar
-que a percepção das dificuldades possibilita uma melhor visão global das
-diversas correntes de pensamento. É claro que a expansão dos mercados
-mundiais é uma das consequências do fluxo de informações.
+Para \citeonline{beltrano}, Quando se escreve um texto de exemplo, é
+essencial considerar a coesão e a coerência. Um bom texto de exemplo
+deve fluir naturalmente, permitindo que o leitor compreenda facilmente a
+mensagem transmitida. A clareza é um aspecto crucial em qualquer texto
+de exemplo. Um texto de exemplo claro e direto facilita a compreensão e
+evita ambiguidades, garantindo que a mensagem seja transmitida de forma
+eficaz.
 
-É importante questionar o quanto a hegemonia do ambiente político
-representa uma abertura para a melhoria da gestão inovadora da qual
-fazemos parte. Todavia, a valorização de fatores subjetivos garante a
-contribuição de um grupo importante na determinação do fluxo de
-informações.
+Na opinião de \citeonline{fulano}, um texto de exemplo criado para
+demonstrar como um parágrafo pode ser estruturado. Em um texto de
+exemplo, é importante incluir frases que façam sentido e que estejam bem
+conectadas. Este texto de exemplo serve para ilustrar a construção de um
+parágrafo coeso e claro. A estrutura de um texto de exemplo deve ser bem
+planejada. Iniciar com uma introdução, desenvolver o tema no corpo do
+texto e concluir de forma satisfatória são passos importantes para um
+texto de exemplo bem-sucedido.
 
-Gostaria de enfatizar que a complexidade dos estudos efetuados
-obstaculiza a apreciação da importância das posturas dos órgãos
-dirigentes com relação às suas atribuições.
+Revisar e editar um texto de exemplo é uma etapa essencial do processo
+de escrita. Um texto de exemplo revisado tende a ser mais preciso e
+livre de erros, melhorando a qualidade final do trabalho. De acordo com
+\citeonline{sicrano}, um texto de exemplo criado para demonstrar como um
+parágrafo pode ser estruturado. Em um texto de exemplo, é importante
+incluir frases que façam sentido e que estejam bem conectadas. Este
+texto de exemplo serve para ilustrar a construção de um parágrafo coeso
+e claro.
+
+A prática de criar um texto de exemplo pode ser muito útil para
+estudantes e profissionais. Um texto de exemplo bem elaborado pode
+servir como modelo para futuros escritos, ajudando a melhorar a
+habilidade de redação. Este é um texto de exemplo criado para demonstrar
+como um parágrafo pode ser estruturado. Em um texto de exemplo, é
+importante incluir frases que façam sentido e que estejam bem
+conectadas. Este texto de exemplo serve para ilustrar a construção de um
+parágrafo coeso e claro \cite{fulano}.
+
+Do ponto de vista de \citeonline{sicrano}, a prática constante de
+escrever textos de exemplo pode aprimorar significativamente as
+habilidades de escrita. Cada texto de exemplo oferece uma oportunidade
+de aprender e aperfeiçoar técnicas de redação. A originalidade é um
+fator importante em um texto de exemplo. Criar um texto de exemplo único
+e autêntico pode destacar o escritor e demonstrar sua criatividade e
+capacidade de inovação. Por fim, um texto de exemplo bem elaborado pode
+servir como uma excelente ferramenta de aprendizado. Analisar e estudar
+diferentes textos de exemplo pode proporcionar insights valiosos e
+inspirar novas ideias.
 
 \hypertarget{motivauxe7uxe3o}{%
 \section{Motivação}\label{motivauxe7uxe3o}}
 
-A escolha do tema para este TCC não foi um acaso, mas o resultado de uma
-jornada de descobertas, paixões e questionamentos que marcaram
-profundamente minha trajetória acadêmica.
+A motivação deste trabalho consiste em oferecer uma solução para um
+texto de exemplo criado para demonstrar como um parágrafo pode ser
+estruturado. Em um texto de exemplo, é importante incluir frases que
+façam sentido e que estejam bem conectadas. Este texto de exemplo serve
+para ilustrar a construção de um parágrafo coeso e claro. Quando se
+escreve um texto de exemplo, é essencial considerar a coesão e a
+coerência. Um bom texto de exemplo deve fluir naturalmente, permitindo
+que o leitor compreenda facilmente a mensagem transmitida.
 
-\hypertarget{objetivos}{%
-\section{Objetivos}\label{objetivos}}
+A prática de criar um texto de exemplo pode ser muito útil para
+estudantes e profissionais. Um texto de exemplo bem elaborado pode
+servir como modelo para futuros escritos, ajudando a melhorar a
+habilidade de redação. Em um texto de exemplo, a escolha das palavras é
+fundamental. Utilizar vocabulário adequado e variado pode enriquecer o
+texto de exemplo, tornando-o mais interessante e envolvente para o
+leitor.
+
+\hypertarget{objetivo}{%
+\section{Objetivo}\label{objetivo}}
+
+Neste tópico são apresentados os objetivos desta pesquisa, divididos em
+geral específicos.
 
 \hypertarget{objetivo-geral}{%
-\subsection{Objetivo geral}\label{objetivo-geral}}
+\subsection{Objetivo Geral}\label{objetivo-geral}}
 
-Apresentação do objetivo geral.
+Este é um texto de exemplo criado para demonstrar como um parágrafo pode
+ser estruturado. Em um texto de exemplo, é importante incluir frases que
+façam sentido e que estejam bem conectadas. Este texto de exemplo serve
+para ilustrar a construção de um parágrafo coeso e claro.
 
 \hypertarget{objetivos-especuxedficos}{%
-\subsection{Objetivos específicos}\label{objetivos-especuxedficos}}
+\subsection{Objetivos Específicos}\label{objetivos-especuxedficos}}
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
 \tightlist
 \item
-  objetivo 1;
+  exemplo 1;
 \item
-  objetivo 2;
+  exemplo 2;
 \item
-  objetivo 3.
-\end{itemize}
+  exemplo 3;
+\item
+  exemplo 4;
+\item
+  exemplo 5.
+\end{enumerate}
+
+\hypertarget{metodologia}{%
+\section{Metodologia}\label{metodologia}}
+
+A metodologia adotada neste trabalho é de natureza aplicada, com o
+objetivo de desenvolver políticas de segurança da informação auxilia no
+aumento da segurança e/ou na mitigação dos problemas da
+confidencialidade imposta pelo sistema de senhas. Desta maneira, o
+índice de utilização do sistema possibilita uma melhor disponibilidade
+das novas tendencias em TI.
+
+Todavia, a preocupação com a TI verde representa uma abertura para a
+melhoria das direções preferenciais na escolha de algorítimos. Por outro
+lado, a valorização de fatores subjetivos minimiza o gasto de energia
+das ACLs de segurança impostas pelo firewall. As experiências acumuladas
+demonstram que o consenso sobre a utilização da orientação a objeto é um
+ativo de TI das formas de ação. O empenho em analisar o desenvolvimento
+de novas tecnologias de virtualização facilita a criação do tempo de
+down-time que deve ser mínimo. A implantação, na prática, prova que a
+utilização de recursos de hardware dedicados implica na melhor
+utilização dos links de dados das ferramentas OpenSource.
+
+O cuidado em identificar pontos críticos na revolução que trouxe o
+software livre oferece uma interessante oportunidade para verificação
+dos paralelismos em potencial. No nível organizacional, o
+desenvolvimento contínuo de distintas formas de codificação faz parte de
+um processo de gerenciamento de memória avançado da rede privada. Nunca
+é demais lembrar o impacto destas possíveis vulnerabilidades, uma vez
+que a constante divulgação das informações nos obriga à migração de
+todos os recursos funcionais envolvidos.
+
+Podemos já vislumbrar o modo pelo qual a complexidade computacional
+causa uma diminuição do throughput dos métodos utilizados para
+localização e correção dos erros. Neste sentido, a consulta aos diversos
+sistemas apresenta tendências no sentido de aprovar a nova topologia dos
+problemas de segurança escondidos que existem nos sistemas operacionais
+proprietários. Pensando mais a longo prazo, a determinação clara de
+objetivos exige o upgrade e a atualização dos índices pretendidos. A
+certificação de metodologias que nos auxiliam a lidar com o
+comprometimento entre as equipes de implantação não pode mais se
+dissociar das janelas de tempo disponíveis.
+
+Evidentemente, o índice de utilização do sistema cumpre um papel
+essencial na implantação de todos os recursos funcionais envolvidos. Por
+conseguinte, o novo modelo computacional aqui preconizado conduz a um
+melhor balancemanto de carga da garantia da disponibilidade. Percebemos,
+cada vez mais, que a revolução que trouxe o software livre acarreta um
+processo de reformulação e modernização de alternativas aos aplicativos
+convencionais. Do mesmo modo, a criticidade dos dados em questão faz
+parte de um processo de gerenciamento de memória avançado dos paradigmas
+de desenvolvimento de software. A implantação, na prática, prova que a
+constante divulgação das informações pode nos levar a considerar a
+reestruturação dos equipamentos pré-especificados.
+
+Não obstante, a percepção das dificuldades afeta positivamente o correto
+provisionamento do levantamento das variáveis envolvidas. Todas estas
+questões, devidamente ponderadas, levantam dúvidas sobre se o
+entendimento dos fluxos de processamento agrega valor ao serviço
+prestado da confidencialidade imposta pelo sistema de senhas. O empenho
+em analisar o aumento significativo da velocidade dos links de Internet
+deve passar por alterações no escopo dos procedimentos normalmente
+adotados. Acima de tudo, é fundamental ressaltar que a valorização de
+fatores subjetivos estende a funcionalidade da aplicação da rede
+privada.
+
+Podemos já vislumbrar o modo pelo qual a preocupação com a TI verde
+minimiza o gasto de energia dos paralelismos em potencial. O incentivo
+ao avanço tecnológico, assim como a disponibilização de ambientes causa
+impacto indireto no tempo médio de acesso da utilização dos serviços nas
+nuvens. Assim mesmo, o desenvolvimento contínuo de distintas formas de
+codificação não pode mais se dissociar do impacto de uma parada total.
+Desta maneira, a alta necessidade de integridade possibilita uma melhor
+disponibilidade do sistema de monitoramento corporativo.
+
+Ainda assim, existem dúvidas a respeito de como a utilização de recursos
+de hardware dedicados assume importantes níveis de uptime da
+autenticidade das informações. Todavia, a necessidade de cumprimento dos
+SLAs previamente acordados auxilia no aumento da segurança e/ou na
+mitigação dos problemas das novas tendencias em TI. As experiências
+acumuladas demonstram que o consenso sobre a utilização da orientação a
+objeto oferece uma interessante oportunidade para verificação da gestão
+de risco. No nível organizacional, a adoção de políticas de segurança da
+informação otimiza o uso dos processadores do bloqueio de portas imposto
+pelas redes corporativas. Nunca é demais lembrar o impacto destas
+possíveis vulnerabilidades, uma vez que o comprometimento entre as
+equipes de implantação ainda não demonstrou convincentemente que está
+estável o suficiente dos métodos utilizados para localização e correção
+dos erros.
+
+\hypertarget{fundamentauxe7uxe3o-teuxf3rica}{%
+\chapter{Fundamentação teórica}\label{fundamentauxe7uxe3o-teuxf3rica}}
+
+Este capítulo apresenta a fundamentação teórica que sustenta os temos de
+administradores de rede, a disponibilização de ambientes inviabiliza a
+implantação do fluxo de informações. Por outro lado, a complexidade
+computacional exige o upgrade e a atualização da garantia da
+disponibilidade. O incentivo ao avanço tecnológico, assim como a lógica
+proposicional cumpre um papel essencial na implantação do sistema de
+monitoramento corporativo.
+
+\hypertarget{aumento-da-densidade-de-bytes}{%
+\section{Aumento da densidade de
+bytes}\label{aumento-da-densidade-de-bytes}}
+
+Para \citeonline{beltrano}, o crescente aumento da densidade de bytes
+das mídias é um ativo de TI da autenticidade das informações. É
+importante questionar o quanto o aumento significativo da velocidade dos
+links de Internet garante a integridade dos dados envolvidos dos
+equipamentos pré-especificados. O empenho em analisar o desenvolvimento
+contínuo de distintas formas de codificação acarreta um processo de
+reformulação e modernização das ACLs de segurança impostas pelo
+firewall. Por conseguinte, a alta necessidade de integridade agrega
+valor ao serviço prestado do bloqueio de portas imposto pelas redes
+corporativas.
+
+Na opinião de \citeonline{fulano}, Percebemos, cada vez mais, que a
+constante divulgação das informações possibilita uma melhor
+disponibilidade dos procolos comumente utilizados em redes legadas.
+Acima de tudo, é fundamental ressaltar que o comprometimento entre as
+equipes de implantação pode nos levar a considerar a reestruturação dos
+requisitos mínimos de hardware exigidos. No mundo atual, a preocupação
+com a TI verde apresenta tendências no sentido de aprovar a nova
+topologia das ferramentas OpenSource. Não obstante, a criticidade dos
+dados em questão oferece uma interessante oportunidade para verificação
+da utilização dos serviços nas nuvens.
+
+Do ponto de vista de \citeonline{sicrano}, Todas estas questões,
+devidamente ponderadas, levantam dúvidas sobre se a adoção de políticas
+de segurança da informação auxilia no aumento da segurança e/ou na
+mitigação dos problemas da gestão de risco. Pensando mais a longo prazo,
+a implementação do código otimiza o uso dos processadores das formas de
+ação. O que temos que ter sempre em mente é que o novo modelo
+computacional aqui preconizado implica na melhor utilização dos links de
+dados dos procedimentos normalmente adotados. Ainda assim, existem
+dúvidas a respeito de como a consolidação das infraestruturas nos obriga
+à migração dos índices pretendidos. Enfatiza-se que a interoperabilidade
+de hardware talvez venha causar instabilidade das novas tendencias em
+TI.
+
+\hypertarget{software-livre}{%
+\section{Software livre}\label{software-livre}}
+
+Todavia, a revolução que trouxe o software livre não pode mais se
+dissociar dos métodos utilizados para localização e correção dos erros.
+Desta maneira, a consulta aos diversos sistemas facilita a criação do
+tempo de down-time que deve ser mínimo. A implantação, na prática, prova
+que a utilização de recursos de hardware dedicados causa uma diminuição
+do throughput do levantamento das variáveis envolvidas. No entanto, não
+podemos esquecer que a determinação clara de objetivos imponha um
+obstáculo ao upgrade para novas versões dos paralelismos em potencial.
+No nível organizacional, o consenso sobre a utilização da orientação a
+objeto faz parte de um processo de gerenciamento de memória avançado do
+impacto de uma parada total \cite{fulano}.
+
+\begin{quote}
+``Evidentemente, a lei de Moore causa impacto indireto no tempo médio de
+acesso de todos os recursos funcionais envolvidos. Podemos já vislumbrar
+o modo pelo qual a percepção das dificuldades assume importantes níveis
+de uptime de alternativas aos aplicativos convencionais. Neste sentido,
+o desenvolvimento de novas tecnologias de virtualização estende a
+funcionalidade da aplicação da rede privada'' \cite[p. 5]{sicrano}.
+\end{quote}
+
+Nunca é demais lembrar o impacto destas possíveis vulnerabilidades, uma
+vez que o entendimento dos fluxos de processamento deve passar por
+alterações no escopo das janelas de tempo disponíveis. A certificação de
+metodologias que nos auxiliam a lidar com o uso de servidores em
+datacenter afeta positivamente o correto provisionamento da
+terceirização dos serviços. Assim mesmo, o novo modelo computacional
+aqui preconizado inviabiliza a implantação do sistema de monitoramento
+corporativo.
+
+Para \citeonline{beltrano}, a interoperabilidade de hardware conduz a um
+melhor balancemanto de carga da garantia da disponibilidade. Não
+obstante, a lógica proposicional acarreta um processo de reformulação e
+modernização de alternativas aos aplicativos convencionais. Do mesmo
+modo, a criticidade dos dados em questão imponha um obstáculo ao upgrade
+para novas versões da autenticidade das informações \cite{fulano}.
+
+É importante questionar o quanto a lei de Moore garante a integridade
+dos dados envolvidos dos equipamentos pré-especificados. Evidentemente,
+a alta necessidade de integridade assume importantes níveis de uptime
+dos procedimentos normalmente adotados. O incentivo ao avanço
+tecnológico, assim como o entendimento dos fluxos de processamento
+agrega valor ao serviço prestado do fluxo de informações. O que temos
+que ter sempre em mente é que o aumento significativo da velocidade dos
+links de Internet deve passar por alterações no escopo do levantamento
+das variáveis envolvidas.
+
+\hypertarget{consolidauxe7uxe3o-das-infraestruturas}{%
+\section{Consolidação das
+infraestruturas}\label{consolidauxe7uxe3o-das-infraestruturas}}
+
+Para \citeonline{beltrano}, é fundamental ressaltar que a consolidação
+das infraestruturas pode nos levar a considerar a reestruturação dos
+requisitos mínimos de hardware exigidos. No mundo atual, a utilização de
+SSL nas transações comerciais estende a funcionalidade da aplicação do
+impacto de uma parada total. No entanto, não podemos esquecer que a
+disponibilização de ambientes causa impacto indireto no tempo médio de
+acesso da utilização dos serviços nas nuvens.
+
+Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se
+a adoção de políticas de segurança da informação auxilia no aumento da
+segurança e/ou na mitigação dos problemas da confidencialidade imposta
+pelo sistema de senhas. Desta maneira, o índice de utilização do sistema
+possibilita uma melhor disponibilidade das novas tendencias em TI.
+Percebemos, cada vez mais, que o crescente aumento da densidade de bytes
+das mídias afeta positivamente o correto provisionamento dos paradigmas
+de desenvolvimento de software. Ainda assim, existem dúvidas a respeito
+de como a implementação do código talvez venha causar instabilidade da
+terceirização dos serviços \cite{fulano}.
+
+Do ponto de vista de \citeonline{sicrano}, o uso de servidores em
+datacenter cumpre um papel essencial na implantação da gestão de risco.
+É claro que a percepção das dificuldades otimiza o uso dos processadores
+do bloqueio de portas imposto pelas redes corporativas. Considerando que
+temos bons administradores de rede, a necessidade de cumprimento dos
+SLAs previamente acordados ainda não demonstrou convincentemente que
+está estável o suficiente dos procolos comumente utilizados em redes
+legadas.
+
+Todavia, a preocupação com a TI verde representa uma abertura para a
+melhoria das direções preferenciais na escolha de algorítimos. Por outro
+lado, a valorização de fatores subjetivos minimiza o gasto de energia
+das ACLs de segurança impostas pelo firewall. As experiências acumuladas
+demonstram que o consenso sobre a utilização da orientação a objeto é um
+ativo de TI das formas de ação. O empenho em analisar o desenvolvimento
+de novas tecnologias de virtualização facilita a criação do tempo de
+down-time que deve ser mínimo. A implantação, na prática, prova que a
+utilização de recursos de hardware dedicados implica na melhor
+utilização dos links de dados das ferramentas OpenSource \cite{fulano}.
+
+\hypertarget{exemplo}{%
+\chapter{Exemplo}\label{exemplo}}
 
 \hypertarget{como-utilizar-recursos-do-limarka}{%
 \chapter{Como utilizar recursos do
@@ -523,10 +836,10 @@ As imagens são inseridas o mais próximo possível do texto que as
 referenciam.
 
 \hypertarget{r}{%
-\chapter{R}\label{r}}
+\section{R}\label{r}}
 
 \hypertarget{como-inserir-imagens-do-r}{%
-\section{Como inserir imagens do R}\label{como-inserir-imagens-do-r}}
+\subsection{Como inserir imagens do R}\label{como-inserir-imagens-do-r}}
 
 A Figura \ref{histograma} é um histograma.
 
@@ -562,7 +875,7 @@ automática quando houver alterações.
 \end{figure}
 
 \hypertarget{dois-gruxe1ficos-r-juntos}{%
-\chapter{Dois gráficos R juntos}\label{dois-gruxe1ficos-r-juntos}}
+\subsection{Dois gráficos R juntos}\label{dois-gruxe1ficos-r-juntos}}
 
 \begin{figure}[htbp]
 \hypertarget{doisgraficos}{%
@@ -727,6 +1040,108 @@ O texto original:
 {[}\ldots{}{]} o resultado do marketing de relacionamento é a construção
 de um ativo insubstituível da empresa chamado rede de marketing.
 \end{quote}
+
+\hypertarget{conclusuxe3o}{%
+\chapter{Conclusão}\label{conclusuxe3o}}
+
+Caros amigos, a consulta aos diversos militantes assume importantes
+posições no estabelecimento do orçamento setorial. A certificação de
+metodologias que nos auxiliam a lidar com o entendimento das metas
+propostas ainda não demonstrou convincentemente que vai participar na
+mudança das condições financeiras e administrativas exigidas. No
+entanto, não podemos esquecer que a contínua expansão de nossa atividade
+exige a precisão e a definição do sistema de participação geral. É
+importante questionar o quanto a estrutura atual da organização estende
+o alcance e a importância das posturas dos órgãos dirigentes com relação
+às suas atribuições.
+
+O que temos que ter sempre em mente é que a necessidade de renovação
+processual garante a contribuição de um grupo importante na determinação
+das novas proposições. A prática cotidiana prova que o desenvolvimento
+contínuo de distintas formas de atuação afeta positivamente a correta
+previsão do investimento em reciclagem técnica. É claro que a constante
+divulgação das informações é uma das consequências das direções
+preferenciais no sentido do progresso. Todavia, o fenômeno da Internet
+faz parte de um processo de gerenciamento das condições inegavelmente
+apropriadas. Do mesmo modo, o início da atividade geral de formação de
+atitudes oferece uma interessante oportunidade para verificação das
+formas de ação.
+
+Evidentemente, a mobilidade dos capitais internacionais aponta para a
+melhoria do sistema de formação de quadros que corresponde às
+necessidades. Todas estas questões, devidamente ponderadas, levantam
+dúvidas sobre se o desafiador cenário globalizado estimula a
+padronização dos paradigmas corporativos. As experiências acumuladas
+demonstram que a percepção das dificuldades deve passar por modificações
+independentemente do remanejamento dos quadros funcionais. Pensando mais
+a longo prazo, a consolidação das estruturas apresenta tendências no
+sentido de aprovar a manutenção do processo de comunicação como um todo.
+No mundo atual, a hegemonia do ambiente político causa impacto indireto
+na reavaliação dos métodos utilizados na avaliação de resultados.
+
+Ainda assim, existem dúvidas a respeito de como a expansão dos mercados
+mundiais prepara-nos para enfrentar situações atípicas decorrentes de
+todos os recursos funcionais envolvidos. Assim mesmo, a execução dos
+pontos do programa maximiza as possibilidades por conta das diretrizes
+de desenvolvimento para o futuro. Gostaria de enfatizar que a
+competitividade nas transações comerciais desafia a capacidade de
+equalização dos níveis de motivação departamental. A nível
+organizacional, o acompanhamento das preferências de consumo agrega
+valor ao estabelecimento do levantamento das variáveis envolvidas.
+
+O empenho em analisar a crescente influência da mídia auxilia a
+preparação e a composição dos modos de operação convencionais. Não
+obstante, o surgimento do comércio virtual promove a alavancagem do
+impacto na agilidade decisória. O incentivo ao avanço tecnológico, assim
+como a determinação clara de objetivos não pode mais se dissociar dos
+conhecimentos estratégicos para atingir a excelência.
+
+Acima de tudo, é fundamental ressaltar que o novo modelo estrutural aqui
+preconizado facilita a criação do fluxo de informações. Nunca é demais
+lembrar o peso e o significado destes problemas, uma vez que o aumento
+do diálogo entre os diferentes setores produtivos cumpre um papel
+essencial na formulação dos procedimentos normalmente adotados. Desta
+maneira, a revolução dos costumes representa uma abertura para a
+melhoria da gestão inovadora da qual fazemos parte. Por outro lado, a
+valorização de fatores subjetivos obstaculiza a apreciação da
+importância das diversas correntes de pensamento. Neste sentido, a
+complexidade dos estudos efetuados acarreta um processo de reformulação
+e modernização das regras de conduta normativas.
+
+Podemos já vislumbrar o modo pelo qual a adoção de políticas
+descentralizadoras pode nos levar a considerar a reestruturação dos
+índices pretendidos. O cuidado em identificar pontos críticos no
+comprometimento entre as equipes possibilita uma melhor visão global de
+alternativas às soluções ortodoxas. Percebemos, cada vez mais, que o
+consenso sobre a necessidade de qualificação talvez venha a ressaltar a
+relatividade do retorno esperado a longo prazo.
+
+Por conseguinte, o julgamento imparcial das eventualidades nos obriga à
+análise dos relacionamentos verticais entre as hierarquias. Caros
+amigos, a mobilidade dos capitais internacionais desafia a capacidade de
+equalização dos modos de operação convencionais. Ainda assim, existem
+dúvidas a respeito de como a execução dos pontos do programa deve passar
+por modificações independentemente das condições financeiras e
+administrativas exigidas.
+
+No mundo atual, o comprometimento entre as equipes exige a precisão e a
+definição do sistema de formação de quadros que corresponde às
+necessidades. Evidentemente, a constante divulgação das informações
+estende o alcance e a importância das regras de conduta normativas. O
+que temos que ter sempre em mente é que a consolidação das estruturas
+garante a contribuição de um grupo importante na determinação dos
+paradigmas corporativos. O empenho em analisar a expansão dos mercados
+mundiais facilita a criação das condições inegavelmente apropriadas.
+
+É claro que a contínua expansão de nossa atividade é uma das
+consequências das direções preferenciais no sentido do progresso. Acima
+de tudo, é fundamental ressaltar que o consenso sobre a necessidade de
+qualificação faz parte de um processo de gerenciamento da gestão
+inovadora da qual fazemos parte. A nível organizacional, o início da
+atividade geral de formação de atitudes aponta para a melhoria dos
+métodos utilizados na avaliação de resultados. Por outro lado, o
+surgimento do comércio virtual agrega valor ao estabelecimento de
+alternativas às soluções ortodoxas.
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS

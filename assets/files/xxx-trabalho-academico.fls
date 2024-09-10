@@ -1,4 +1,4 @@
-PWD /tmp/TMP_1e2162e5dceb6fdba9fba4f9ef18f591
+PWD /tmp/TMP_9ba245b2c48f2de3327db12be1ab3c99
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -217,20 +217,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-fr.ini
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-es.ini
+INPUT xxx-trabalho-academico.lof
+INPUT xxx-trabalho-academico.lof
 INPUT xxx-trabalho-academico.toc
 INPUT xxx-trabalho-academico.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
 INPUT imagens/passaro.jpg
@@ -240,6 +231,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT imagens/R/pizza-grafico.pdf
 INPUT imagens/R/dois-graficos.pdf
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT xxx-trabalho-academico.bbl
 INPUT xxx-trabalho-academico.bbl
 INPUT xxx-trabalho-academico.brf
@@ -248,6 +242,7 @@ INPUT ./xxx-trabalho-academico.brf
 INPUT ./xxx-trabalho-academico.brf
 OUTPUT xxx-trabalho-academico.brf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
+OUTPUT xxx-trabalho-academico.lof
 OUTPUT xxx-trabalho-academico.toc
 INPUT xxx-trabalho-academico.aux
 INPUT ./xxx-trabalho-academico.brf

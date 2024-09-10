@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  17 APR 2024 23:48
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  10 SEP 2024 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,16 +631,16 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks27
 )
-Package color Info: Redefining color blue on input line 129.
+Package color Info: Redefining color blue on input line 131.
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\newline' on input line 146.
+(hyperref)                removing `\newline' on input line 148.
 
-Package hyperref Info: Option `colorlinks' set `false' on input line 146.
+Package hyperref Info: Option `colorlinks' set `false' on input line 148.
 \c@quadro=\count332
 \c@loqdepth=\count333
 \cftbeforequadroskip=\skip265
@@ -713,33 +713,33 @@ Package: latexcustomizacao 2017 Criacao desta customizacao do abnTeX2
 ) (./xxx-trabalho-academico.aux)
 \openout1 = `xxx-trabalho-academico.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 240.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 242.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-40.
+42.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 240.
+Package hyperref Info: Link coloring OFF on input line 242.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -751,16 +751,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 240.
-LaTeX Info: Redefining \ref on input line 240.
-LaTeX Info: Redefining \pageref on input line 240.
-LaTeX Info: Redefining \nameref on input line 240.
+LaTeX Info: Redefining \nameref on input line 242.
+LaTeX Info: Redefining \ref on input line 242.
+LaTeX Info: Redefining \pageref on input line 242.
+LaTeX Info: Redefining \nameref on input line 242.
 \myptabbox=\box60
 \myptabboxwidth=\skip275
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 240.
-LaTeX Info: Redefining \microtypecontext on input line 240.
+(lastpage)             ! on input line 242.
+LaTeX Info: Redefining \microtypecontext on input line 242.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -785,16 +785,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 271.
+(Font)              <12> on input line 273.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 271.
+(Font)              <8> on input line 273.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 271.
+(Font)              <6> on input line 273.
 [1
 
 
 
 ] [2
+
 
 ] [3
 
@@ -803,52 +804,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [5
 
-]
-Package babel Info: \l@french = using hyphenrules for portuguese
-(babel)             (\language3) on input line 356.
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
-Package babel Info: Importing basic data for french
-(babel)             from babel-fr.ini. Reported on input line 11.
+] (./xxx-trabalho-academico.lof) [6
 
-Package babel Warning: From babel-fr.ini:
-(babel)                The `french' date format may not be suitable
-(babel)                for proper typesetting, and therefore very likely
-(babel)                it will change in a future release.
-(babel)                Reported  on input line 11.
-
-) [6
-
-]
-Package babel Info: \l@spanish = using hyphenrules for portuguese
-(babel)             (\language3) on input line 367.
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-Package babel Info: Importing basic data for spanish
-(babel)             from babel-es.ini. Reported on input line 11.
-) [7
-
-] [8
+] [7
 
 
-] (./xxx-trabalho-academico.toc) [9
+] (./xxx-trabalho-academico.toc) [8
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-66.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [10
+] [9
 
+
+] [10] [11] [12] [13
+
+] [14] [15] [16
 
 ]
 File: imagens/passaro.jpg Graphic file (type bmp)
 <imagens/passaro.jpg>
-[11
-
-] [12]
 File: imagens/R/historgrama.pdf Graphic file (type pdf)
 <use imagens/R/historgrama.pdf>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 54
-3.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 85
+6.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -856,40 +832,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+[17
+
+] [18]
 File: imagens/R/pizza-grafico.pdf Graphic file (type pdf)
 <use imagens/R/pizza-grafico.pdf>
-[13
-
-] [14]
 File: imagens/R/dois-graficos.pdf Graphic file (type pdf)
 <use imagens/R/dois-graficos.pdf>
 
-Overfull \hbox (4.24286pt too wide) in paragraph at lines 588--589
+Overfull \hbox (4.24286pt too wide) in paragraph at lines 901--902
 []\T1/ptm/m/n/12 Duração|  
  []
 
 
-Overfull \hbox (4.24286pt too wide) in paragraph at lines 598--599
+Overfull \hbox (4.24286pt too wide) in paragraph at lines 911--912
 []\T1/ptm/m/n/12 Duração|  
  []
 
 
-Overfull \hbox (2.82721pt too wide) in paragraph at lines 603--604
+Overfull \hbox (2.82721pt too wide) in paragraph at lines 916--917
 []\T1/ptm/m/n/12 Enfermagem|  
  []
 
 
-Overfull \hbox (5.71922pt too wide) in paragraph at lines 617--618
+Overfull \hbox (5.71922pt too wide) in paragraph at lines 930--931
 []\T1/ptm/m/n/12 Agropecuária|  
  []
 
-[15
-
-]
+[19]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 9
+85.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [20]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.681 \begin{array}{c|c}
+l.994 \begin{array}{c|c}
                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -897,7 +876,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.685 \end{array}
+l.998 \end{array}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -905,37 +884,43 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[16] (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
+[21] [22
+
+] (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
 \tf@brf=\write5
 \openout5 = `xxx-trabalho-academico.brf'.
 
-[17]
+[23]
 bibitemlist
 ) 
 AED: lastpage setting LastPage
-[18
+[24
 
 ]
-\tf@toc=\write6
-\openout6 = `xxx-trabalho-academico.toc'.
+\tf@lof=\write6
+\openout6 = `xxx-trabalho-academico.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 762.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 762.
+\tf@toc=\write7
+\openout7 = `xxx-trabalho-academico.toc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1177.
 (./xxx-trabalho-academico.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 762.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 762.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1177.
+
 Package rerunfilecheck Info: File `xxx-trabalho-academico.brf' has not changed.
 
-(rerunfilecheck)             Checksum: B71A129C24C8C3D298E3E60CACFF6B1E;322.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
+(rerunfilecheck)             Checksum: 5E98CEE72D5DDD73D17705838E13197A;1037.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1177.
  ) 
 Here is how much of TeX's memory you used:
- 17639 strings out of 481788
- 271856 string characters out of 5937331
+ 17478 strings out of 481788
+ 267870 string characters out of 5937331
  729035 words of memory out of 5000000
- 34349 multiletter control sequences out of 15000+600000
+ 34195 multiletter control sequences out of 15000+600000
  554522 words of font info for 50 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 42i,11n,45p,279b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,45p,279b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on xxx-trabalho-academico.xdv (19 pages, 39296 bytes).
+Output written on xxx-trabalho-academico.xdv (25 pages, 82456 bytes).

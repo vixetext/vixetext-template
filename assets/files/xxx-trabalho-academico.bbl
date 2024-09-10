@@ -17,4 +17,25 @@ Dispon{\'\i}vel em: \url{https://github.com/abntex/limarka}. Acesso em: 5 de
   compat{\'\i}veis com a abnt nbr 6023.
 [S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
 
+\bibitem[Beltrano 2024]{beltrano}
+\abntrefinfo{Beltrano}{BELTRANO}{2024}
+{BELTRANO, E. \emph{Exemplo de referência}. 2024. Página do projeto.
+Dispon{\'\i}vel em:
+  \url{https://reinanhs.github.io/limarka-template-docs/guia-elementos/bibliografias-e-referencias}.
+  Acesso em: 10 de set 2024.}
+
+\bibitem[Fulano 2024]{fulano}
+\abntrefinfo{Fulano}{FULANO}{2024}
+{FULANO, E. \emph{Exemplo de referência}. 2024. Página do projeto.
+Dispon{\'\i}vel em:
+  \url{https://reinanhs.github.io/limarka-template-docs/guia-elementos/bibliografias-e-referencias}.
+  Acesso em: 10 de set 2024.}
+
+\bibitem[Sicrano 2024]{sicrano}
+\abntrefinfo{Sicrano}{SICRANO}{2024}
+{SICRANO, E. \emph{Exemplo de referência}. 2024. Página do projeto.
+Dispon{\'\i}vel em:
+  \url{https://reinanhs.github.io/limarka-template-docs/guia-elementos/bibliografias-e-referencias}.
+  Acesso em: 10 de set 2024.}
+
 \end{thebibliography}
