@@ -4,5 +4,7 @@
         "editorconfig.editorconfig",
         "fcrespo82.markdown-table-formatter",
         "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "ms-vsliveshare.vsliveshare",
+        "marp-team.marp-vscode",
     ]
 }

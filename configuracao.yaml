@@ -6,28 +6,30 @@ instituicao: Universidade/Faculdade do Brasil
 author: Nome do autor
 title: Título do trabalho
 local: Cidade - UF
-date: '2019'
+date: '2024'
 titulacao: Minha-titulação
 curso: Meu-curso
 programa: Programa de Pós-Graduação em XXX
 area_de_concentracao: Computação
 linha_de_pesquisa: ''
-coorientador: ''
-orientador: Nome-do-Orientador
-avaliador2: Nome-do-Prof-Convidado2
-aprovacao_dia: '1'
-avaliador1: Nome-do-Prof-Convidado1
+coorientador: 'Prof. Nome Do Coorientador'
+orientador: 'Prof. Dr. Nome Do Orientador'
+aprovacao_dia: 'xx de novembro de xxxx'
+avaliador1: 'Prof. Nome Do Convidado'
+avaliador2: 'Prof. Nome Do Convidado 2'
 avaliador3: ''
+incluir_ficha_catalografica: false
+folha_de_aprovacao: true
 #===============================================#
 # Configurações de textos
 #===============================================#
 resumo: '@import(pages/resumo.md)'
-resumen: '@import(pages/resumen.md)'
-resume: '@import(pages/resume.md)'
 abstract_texto: '@import(pages/abstract.md)'
 proposito: '@import(pages/proposito.md)'
 agradecimentos: '@import(pages/agradecimentos.md)'
-dedicatoria: '@import(pages/dedicatoria.md)'
+resumen: ''
+resume: ''
+dedicatoria: ''
 epigrafe: ''
 capa_pdf_caminho: ''
 #===============================================#
@@ -36,25 +38,37 @@ capa_pdf_caminho: ''
 siglas:
   - s: ABNT
     d: Associação Brasileira de Normas Técnicas
+  - s: API
+    d: Application Programming Interface
+  - s: BSI
+    d: Bacharelado em Sistemas de Informação
+  - s: CD
+    d: Continuous Deployment/Delivery
+  - s: CI
+    d: Continuous Integration
+  - s: CLI
+    d: Command Line Interface
+  - s: CSS
+    d: Cascading Style Sheets
+  - s: VS Code
+    d: Visual Studio Code
 simbolos:
 graduacao: true
 especializacao: false
 mestrado: false
 doutorado: false
 tipo_do_trabalho: Monografia
-incluir_ficha_catalografica: false
-folha_de_aprovacao: false
 projeto: true
 apendices: false
 anexos: false
 errata: false
 referencias_sistema: alf
-lista_ilustracoes: false
+lista_ilustracoes: true
 lista_quadros: false
 lista_tabelas: false
 referencias_caminho: config/referencias.bib
-palavras_chave: 'Markup Language, Markdown, Normas da ABNT, Latex, Limarka'
-keywords: ''
+palavras_chave: 'Limarka, Markdown, Automação, Marp, Ferramenta, Aprimoramento e Produtividade'
+keywords: 'Limarka, Markdown, Automation, Marp, Tool, Improvement and Productivity'
 palabras_clave: ''
 mots_cles: ''
 #===============================================#
@@ -62,7 +76,7 @@ mots_cles: ''
 # Link: https://github.com/ReinanHS/limarka-render-html
 #===============================================#
 page_render:
-  published_time: '2022-06-28T18:26:24-03:00'
+  published_time: '2024-09-06T00:35:50-03:00'
   instituicao_website: 'https://www.ifs.edu.br/'
   social_networks:
     facebook: reinangabriel

@@ -24,4 +24,8 @@
     "templates",
     "configuracao.yaml"
   ],
+  "markdown.marp.themes": [
+    "https://raw.githubusercontent.com/reinanhs/marp-theme-academic/main/themes/academic.css"
+  ],
+  "markdown.marp.enableHtml": true
 }
