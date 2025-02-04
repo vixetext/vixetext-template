@@ -10,6 +10,8 @@ Esse repositório é responsável por contém os arquivos do esqueleto (modelo) 
 
 Provavelmente se você chegou a utilizar o [abntex/trabalho-academico-limarka](https://github.com/abntex/trabalho-academico-limarka), você encontrou problemas ao configurar o ambiente. Ao usar esse modelo vários problemas serão solucionados.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ReinanHS/limarka-template-tcc?machine=standardLinux2gb)
+
 ## Sumário
 
 <details open>
