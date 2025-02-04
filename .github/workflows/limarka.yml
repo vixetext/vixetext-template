@@ -26,7 +26,7 @@ jobs:
       image: docker://reinanhs/limarka-help:1.0.0
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Run Commands
         run: |
@@ -37,7 +37,7 @@ jobs:
           mv build/* ./dist/
           ls ./dist
       - name: Archive limarka artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist-limarka
           path: dist
@@ -49,7 +49,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Ensure build dir exists
         run: mkdir -p dist-slide
@@ -82,7 +82,7 @@ jobs:
           LANG: "pt_BR.UTF-8"
 
       - name: Archive marp artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist-marp
           path: dist-slide
@@ -93,9 +93,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Download a single artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist-limarka
 
@@ -118,7 +118,7 @@ jobs:
           echo "Comparação final" && ls -al | grep .pdf
 
       - name: Download slide artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist-marp
       - name: Run the build process with Docker
@@ -142,13 +142,16 @@ jobs:
             mkdir -p data/build
             cp build_local/* data/build -r
       - name: Alteração do nome dos botões
+        env:
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
         run: |
           ls -al build
           sudo sed -i '0,/Visualizar PDF/s//Visualizar Slide/' build/index.html
           sudo sed -i '0,/Visualizar PDF/s//Visualizar Artigo/' build/index.html
-          sudo sed -i "s|location.href = 'https://reinanhs.github.io/limarka-template-tcc/assets/files/xxx-slide.pdf'|location.href = 'https://reinanhs.github.io/limarka-template-tcc/slide'|" build/index.html
+          sudo sed -i "s|location.href = 'https://${GITHUB_OWNER}.github.io/${GITHUB_REPO}/assets/files/xxx-slide.pdf'|location.href = 'https://${GITHUB_OWNER}.github.io/${GITHUB_REPO}/slide'|" build/index.html
       - name: Archive limarka artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-page
           path: build
@@ -159,9 +162,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Download build
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: build-page
           path: build
