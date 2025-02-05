@@ -3,6 +3,12 @@ name: Limarka Workflow
 on:
   push:
     branches: ["master"]
+  workflow_dispatch:
+    inputs:
+      enable_deploy:
+        description: "Habilitar a implantação? (true/false)"
+        required: true
+        default: "false"
 
 jobs:
   markdown-lint:
@@ -88,27 +94,62 @@ jobs:
           path: dist-slide
           retention-days: 1
 
-  build-page:
+  optimization-files:
     needs: [build-limarka, build-marp]
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
+
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
           name: dist-limarka
 
+      - name: Download a single artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-marp
+
       - name: Instalação do ghostscript
         run: |
-            sudo apt-get update
-            sudo apt-get install -y ghostscript
+          sudo apt-get update
+          sudo apt-get install -y ghostscript
 
-      - name: Debug
-        run: ls -al
-
-      - name: Otimização do arquivo em PDF
+      - name: Otimização do arquivo do Limarka
         run: ps2pdf -dPDFSETTINGS=/printer xxx-trabalho-academico.pdf xxx-trabalho-academico-printer.pdf
+
+      - name: Otimização do arquivo do Marp
+        run: ps2pdf -dPDFSETTINGS=/printer xxx-slide.pdf xxx-slide-printer.pdf
+
+      - name: Arquivos para publicação
+        uses: actions/upload-artifact@v4
+        with:
+          name: optimization-files
+          path: |
+            xxx-trabalho-academico-printer.pdf
+            xxx-slide-printer.pdf
+            xxx-slide.pptx
+          retention-days: 90
+          compression-level: 8
+
+  build-page:
+    if: ${{ github.event.inputs.enable_deploy == 'true' }}
+    needs: [build-limarka, build-marp, optimization-files]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-limarka
+
+      - name: Download a single artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: optimization-files
 
       - name: Otimização do arquivo em PDF
         run: |
@@ -156,10 +197,14 @@ jobs:
           name: build-page
           path: build
           retention-days: 1
+
   deploy:
+    if: ${{ github.event.inputs.enable_deploy == 'true' }}
     needs: build-page
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -171,4 +216,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build # The folder the action should deploy.
+          folder: build
