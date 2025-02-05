@@ -10,10 +10,18 @@
 
 @import('article/fundamentacao/fundamentacao-teorica.md')
 
+# Trabalhos relacionados
+
+@import('article/fundamentacao/trabalhos-relacionados.md')
+
 <!-- Capítulo 4: Melhorias -->
 # Exemplo
 
 @import('article/desenvolvimento/main.md')
+
+# Trabalhos futuros
+
+@import('article/conclusao/trabalhos-futuros.md')
 
 <!-- Capítulo 5: Conclusão -->
 # Conclusão

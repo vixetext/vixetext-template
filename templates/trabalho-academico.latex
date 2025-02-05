@@ -70,7 +70,7 @@
 % ---
 % Pacotes de citações
 % ---
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+%\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[$referencias_sistema$]{abntex2cite}	% Citações padrão ABNT
 
 % ---
@@ -231,7 +231,7 @@ $endif$}%% fim do preambulo
 %\floatsetup[figure]{capposition=top}
 
 % Para melhorar o visual do quadro
-\usepackage{boldline} 
+\usepackage{boldline}
 \def\toprule{\hlineB{3}} % primeira linha mais gorda
 \def\midrule{\hline}
 \def\bottomrule{\hlineB{3}} % última linha mais gorda
