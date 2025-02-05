@@ -13,6 +13,8 @@ Latexmk: Run number 1 of rule 'bibtex xxx-trabalho-academico'
 Latexmk: Run number 2 of rule 'xelatex'
 Latexmk: Run number 2 of rule 'bibtex xxx-trabalho-academico'
 Latexmk: Run number 3 of rule 'xelatex'
+Latexmk: Run number 3 of rule 'bibtex xxx-trabalho-academico'
+Latexmk: Run number 4 of rule 'xelatex'
 Latexmk: Run number 1 of rule 'xdvipdfmx'
 Collected error summary (may duplicate other messages):
   xelatex: Command for 'xelatex' gave return code 1

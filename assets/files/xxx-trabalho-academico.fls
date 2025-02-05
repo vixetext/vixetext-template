@@ -1,4 +1,4 @@
-PWD /tmp/TMP_1a1c7f7ea9148c84c13d8397a7b8f541
+PWD /tmp/TMP_e4cf3e558a03096474a59802711f64ca
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -143,8 +143,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty
@@ -245,14 +243,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT xxx-trabalho-academico.bbl
 INPUT xxx-trabalho-academico.bbl
-INPUT xxx-trabalho-academico.brf
-INPUT xxx-trabalho-academico.brf
-INPUT ./xxx-trabalho-academico.brf
-INPUT ./xxx-trabalho-academico.brf
-OUTPUT xxx-trabalho-academico.brf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8t.tfm
 OUTPUT xxx-trabalho-academico.lof
 OUTPUT xxx-trabalho-academico.toc
 INPUT xxx-trabalho-academico.aux
-INPUT ./xxx-trabalho-academico.brf
-INPUT ./xxx-trabalho-academico.brf

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  5 FEB 2025 00:28
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.9.18)  5 FEB 2025 00:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,9 +610,7 @@ Package: xparse 2020-02-14 L3 Experimental document command parser
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
-Package: backref 2020/01/14 v1.40 Bibliographical back referencing
-) (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip262
@@ -631,6 +629,42 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks27
 )
+
+! LaTeX Error: Command \backrefpagesname undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \renewcommand{\backrefpagesname}
+                                     {Citado na(s) página(s):~}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \backref undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \renewcommand{\backref}
+                            {}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \backrefalt undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \renewcommand*{\backrefalt}
+                                [4]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Package color Info: Redefining color blue on input line 131.
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
@@ -825,21 +859,23 @@ File: imagens/ficha-catalografica.pdf Graphic file (type pdf)
 ] [9
 
 
-] (./xxx-trabalho-academico.toc) [10
+] (./xxx-trabalho-academico.toc [10
 
-] [11
+]) [11] [12
 
 
-] [12] [13] [14] [15
+] [13] [14] [15] [16
 
-] [16] [17] [18
+] [17] [18] [19
+
+] [20] [21
 
 ]
 File: imagens/passaro.jpg Graphic file (type bmp)
 <imagens/passaro.jpg>
 File: imagens/R/historgrama.pdf Graphic file (type pdf)
 <use imagens/R/historgrama.pdf>
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 87
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 94
 5.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -848,43 +884,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[19
+[22
 
-] [20]
+] [23]
 File: imagens/R/pizza-grafico.pdf Graphic file (type pdf)
 <use imagens/R/pizza-grafico.pdf>
 File: imagens/R/dois-graficos.pdf Graphic file (type pdf)
 <use imagens/R/dois-graficos.pdf>
 
-Overfull \hbox (4.24286pt too wide) in paragraph at lines 920--921
+Overfull \hbox (4.24286pt too wide) in paragraph at lines 990--991
 []\T1/ptm/m/n/12 Duração|  
  []
 
 
-Overfull \hbox (4.24286pt too wide) in paragraph at lines 930--931
+Overfull \hbox (4.24286pt too wide) in paragraph at lines 1000--1001
 []\T1/ptm/m/n/12 Duração|  
  []
 
 
-Overfull \hbox (2.82721pt too wide) in paragraph at lines 935--936
+Overfull \hbox (2.82721pt too wide) in paragraph at lines 1005--1006
 []\T1/ptm/m/n/12 Enfermagem|  
  []
 
 
-Overfull \hbox (5.71922pt too wide) in paragraph at lines 949--950
+Overfull \hbox (5.71922pt too wide) in paragraph at lines 1019--1020
 []\T1/ptm/m/n/12 Agropecuária|  
  []
 
-[21]
+[24]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-004.
+074.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [22]
+) [25]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1013 \begin{array}{c|c}
+l.1083 \begin{array}{c|c}
                          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -892,7 +928,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1017 \end{array}
+l.1087 \end{array}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -900,43 +936,37 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[23] [24
+[26] [27
 
-] (./xxx-trabalho-academico.bbl (./xxx-trabalho-academico.brf)
-\tf@brf=\write5
-\openout5 = `xxx-trabalho-academico.brf'.
+] [28] [29
 
-[25]
+] (./xxx-trabalho-academico.bbl [30]
 bibitemlist
 ) 
 AED: lastpage setting LastPage
-[26
+[31
 
 ]
-\tf@lof=\write6
-\openout6 = `xxx-trabalho-academico.lof'.
+\tf@lof=\write5
+\openout5 = `xxx-trabalho-academico.lof'.
 
-\tf@toc=\write7
-\openout7 = `xxx-trabalho-academico.toc'.
+\tf@toc=\write6
+\openout6 = `xxx-trabalho-academico.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1196.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1196.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1351.
 (./xxx-trabalho-academico.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1196.
-
-Package rerunfilecheck Info: File `xxx-trabalho-academico.brf' has not changed.
-
-(rerunfilecheck)             Checksum: 954C9EF2CF1BCBAF9533FD63730AA88F;1043.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1196.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1351.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1351.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1351.
  ) 
 Here is how much of TeX's memory you used:
- 17491 strings out of 481788
- 268253 string characters out of 5937331
+ 17318 strings out of 481788
+ 265509 string characters out of 5937331
  729035 words of memory out of 5000000
- 34206 multiletter control sequences out of 15000+600000
+ 34038 multiletter control sequences out of 15000+600000
  556166 words of font info for 51 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 42i,18n,45p,279b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,45p,336b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on xxx-trabalho-academico.xdv (27 pages, 83696 bytes).
+Output written on xxx-trabalho-academico.xdv (32 pages, 98388 bytes).
