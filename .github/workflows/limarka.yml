@@ -146,6 +146,11 @@ jobs:
         with:
           name: dist-limarka
 
+      - name: Download slide artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-marp
+
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
@@ -155,13 +160,11 @@ jobs:
         run: |
           echo "Comparação inicial" && ls -al | grep .pdf
           rm xxx-trabalho-academico.pdf
+          rm xxx-slide.pdf
           mv xxx-trabalho-academico-printer.pdf xxx-trabalho-academico.pdf
+          mv xxx-slide-printer.pdf xxx-slide.pdf
           echo "Comparação final" && ls -al | grep .pdf
 
-      - name: Download slide artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: dist-marp
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
