@@ -1,22 +1,22 @@
 # Fdb version 3
-["bibtex xxx-trabalho-academico"] 1738714005 "xxx-trabalho-academico.aux" "xxx-trabalho-academico.bbl" "xxx-trabalho-academico" 1738714005
+["bibtex xxx-trabalho-academico"] 1738714921 "xxx-trabalho-academico.aux" "xxx-trabalho-academico.bbl" "xxx-trabalho-academico" 1738714922
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "xxx-referencias.bib" 1738714003 1844 d9a8905b52acca69d987d75cc20f0c91 ""
-  "xxx-trabalho-academico.aux" 1738714005 12800 032c7d10ea6233ba4a4b8148d92784d7 "xelatex"
+  "xxx-referencias.bib" 1738714919 1844 d9a8905b52acca69d987d75cc20f0c91 ""
+  "xxx-trabalho-academico.aux" 1738714922 12808 ec3a695f2b16ef7b3848a86deb31a294 "xelatex"
   (generated)
-  "xxx-trabalho-academico.bbl"
   "xxx-trabalho-academico.blg"
-["makeindex xxx-trabalho-academico.idx"] 1738714004 "xxx-trabalho-academico.idx" "xxx-trabalho-academico.ind" "xxx-trabalho-academico" 1738714005
-  "xxx-trabalho-academico.idx" 1738714005 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "xxx-trabalho-academico.bbl"
+["makeindex xxx-trabalho-academico.idx"] 1738714920 "xxx-trabalho-academico.idx" "xxx-trabalho-academico.ind" "xxx-trabalho-academico" 1738714922
+  "xxx-trabalho-academico.idx" 1738714922 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
   (generated)
   "xxx-trabalho-academico.ilg"
   "xxx-trabalho-academico.ind"
-["xdvipdfmx"] 1738714005 "xxx-trabalho-academico.xdv" "xxx-trabalho-academico.pdf" "xxx-trabalho-academico" 1738714005
-  "xxx-trabalho-academico.xdv" 1738714005 82456 a88adaed37d6fffacc09c09490451502 "xelatex"
+["xdvipdfmx"] 1738714922 "xxx-trabalho-academico.xdv" "xxx-trabalho-academico.pdf" "xxx-trabalho-academico" 1738714922
+  "xxx-trabalho-academico.xdv" 1738714922 83696 47c51c057d017375925ea85a858fbd55 "xelatex"
   (generated)
   "xxx-trabalho-academico.pdf"
-["xelatex"] 1738714005 "xxx-trabalho-academico.tex" "xxx-trabalho-academico.xdv" "xxx-trabalho-academico" 1738714005
+["xelatex"] 1738714921 "xxx-trabalho-academico.tex" "xxx-trabalho-academico.xdv" "xxx-trabalho-academico" 1738714922
   "/etc/texmf/web2c/texmf.cnf" 1663504897 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm" 1136768653 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -130,24 +130,25 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1663504916 3336579 eec245397fd2afc5979838999fdb1c7d ""
-  "imagens/R/dois-graficos.pdf" 1738713895 4736 7dba07dd780c8ea396a1d1ce1f02c833 ""
-  "imagens/R/historgrama.pdf" 1738713895 4406 32e510646dc2f79b56c2010c8f87b786 ""
-  "imagens/R/pizza-grafico.pdf" 1738713895 5790 a872ce5e17246befde90080523c9ca33 ""
-  "imagens/logo.png" 1738713895 8073 215272e2e518ad8cfb4813335237f83c ""
-  "imagens/passaro.jpg" 1738713895 89266 39a2c47a342896b19329df87b9e79bfa ""
-  "latexcustomizacao.sty" 1738713895 945 4d967ed3087488688b9b8303ca95a411 ""
-  "xxx-trabalho-academico.aux" 1738714005 12800 032c7d10ea6233ba4a4b8148d92784d7 "xelatex"
-  "xxx-trabalho-academico.bbl" 1738714005 1582 106178f12ad983cfb51bf5c56560f5e1 "bibtex xxx-trabalho-academico"
-  "xxx-trabalho-academico.brf" 1738714005 1037 5e98cee72d5ddd73d17705838e13197a "xelatex"
-  "xxx-trabalho-academico.ind" 1738714004 0 d41d8cd98f00b204e9800998ecf8427e "makeindex xxx-trabalho-academico.idx"
-  "xxx-trabalho-academico.lof" 1738714005 484 ccbfd1431e7a194375230cab13971b11 "xelatex"
-  "xxx-trabalho-academico.tex" 1738714003 47256 36b0dbf70992965f7973543576d7dc41 ""
-  "xxx-trabalho-academico.toc" 1738714005 3153 fe9abc023dff53a39a5481db917d849b "xelatex"
+  "imagens/R/dois-graficos.pdf" 1738714828 4736 7dba07dd780c8ea396a1d1ce1f02c833 ""
+  "imagens/R/historgrama.pdf" 1738714828 4406 32e510646dc2f79b56c2010c8f87b786 ""
+  "imagens/R/pizza-grafico.pdf" 1738714828 5790 a872ce5e17246befde90080523c9ca33 ""
+  "imagens/ficha-catalografica.pdf" 1738714828 77203 08c11d6c9a94fa2da65d757439c5e657 ""
+  "imagens/logo.png" 1738714828 8073 215272e2e518ad8cfb4813335237f83c ""
+  "imagens/passaro.jpg" 1738714828 89266 39a2c47a342896b19329df87b9e79bfa ""
+  "latexcustomizacao.sty" 1738714828 945 4d967ed3087488688b9b8303ca95a411 ""
+  "xxx-trabalho-academico.aux" 1738714922 12808 ec3a695f2b16ef7b3848a86deb31a294 "xelatex"
+  "xxx-trabalho-academico.bbl" 1738714921 1582 106178f12ad983cfb51bf5c56560f5e1 "bibtex xxx-trabalho-academico"
+  "xxx-trabalho-academico.brf" 1738714922 1043 954c9ef2cf1bcbaf9533fd63730aa88f "xelatex"
+  "xxx-trabalho-academico.ind" 1738714921 0 d41d8cd98f00b204e9800998ecf8427e "makeindex xxx-trabalho-academico.idx"
+  "xxx-trabalho-academico.lof" 1738714922 484 eaded4824593688eed62882f15d6f6f0 "xelatex"
+  "xxx-trabalho-academico.tex" 1738714920 47885 459623175a55ce54d4af9efe69de4bab ""
+  "xxx-trabalho-academico.toc" 1738714922 3154 6f0d5580cdc9fc16fb4ee43813becdcd "xelatex"
   (generated)
+  "xxx-trabalho-academico.aux"
+  "xxx-trabalho-academico.brf"
+  "xxx-trabalho-academico.idx"
+  "xxx-trabalho-academico.toc"
   "xxx-trabalho-academico.log"
   "xxx-trabalho-academico.xdv"
-  "xxx-trabalho-academico.toc"
-  "xxx-trabalho-academico.aux"
-  "xxx-trabalho-academico.idx"
-  "xxx-trabalho-academico.brf"
   "xxx-trabalho-academico.lof"

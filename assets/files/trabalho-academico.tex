@@ -269,11 +269,21 @@ grau de bacharel em Sistemas de Informação.
 % ---
 % Folha de rosto: sempre será impressa
 % ---
-\imprimirfolhaderosto
+
+\imprimirfolhaderosto* % (o * indica que haverá a ficha catalográfica)
 
 % ---
-% Sem ficha catalográfica
+% Inserir a ficha catalográfica
 % ---
+% Provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo:
+
+\begin{fichacatalografica}
+    \includepdf{imagens/ficha-catalografica.pdf}
+\end{fichacatalografica}
+
 % ---
 
 
@@ -310,7 +320,7 @@ grau de bacharel em Sistemas de Informação.
     \vspace*{\fill}
    \end{center}
 
-   Monografia aprovada. \imprimirlocal, xx de novembro de xxxx de  de 2024:
+   Monografia aprovada. \imprimirlocal, 04 de outubro de 2024:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador}
    \assinatura{\textbf{Prof.~Nome Do Coorientador} \\ Coorientador}
@@ -344,6 +354,15 @@ diferentes setores produtivos promove a alavancagem das posturas dos
 % ---
 % Epígrafe
 % ---
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+
+  O sucesso é ir de fracasso em fracasso sem perder o entusiasmo. (Winston
+  Churchill)
+
+	\end{flushright}
+\end{epigrafe}
 % ---
 
 % ---
@@ -359,7 +378,7 @@ diferentes setores produtivos promove a alavancagem das posturas dos
   uma abertura para a melhoria das condições financeiras e administrativas
   exigidas.
 
- \textbf{Palavras-chave}: Limarka, Markdown, Automação, Marp, Ferramenta, Aprimoramento e
+ \textbf{Palavras-chave}: Limarka; Markdown; Automação; Marp; Ferramenta; Aprimoramento;
 Produtividade
 \end{resumo}
 
@@ -378,7 +397,7 @@ Produtividade
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Keywords}: Limarka, Markdown, Automation, Marp, Tool, Improvement and Productivity
+   \textbf{Keywords}: Limarka; Markdown; Automation; Marp; Tool; Improvement; Productivity
  \end{otherlanguage*}
 \end{resumo}
 
