@@ -33,14 +33,12 @@ O template foi pensado para ser flexível e adaptável às diferentes áreas de 
 - [Resumo](criando-um-documento/elementos-pre-textuais/resumo)
 - [Introdução](criando-um-documento/elementos-pos-textuais/introducoo)
 - [Fundamentação teórica](criando-um-documento/elementos-pos-textuais/fundamentacao-teorica)
-- [Trabalhos relacionados](criando-um-documento/elementos-pos-textuais/trabalhos-relacionados)
 - [Desenvolvimento](criando-um-documento/elementos-pos-textuais/desenvolvimento)
 - [Trabalhos futuros](criando-um-documento/elementos-pos-textuais/trabalhos-futuros)
 - [Conclusão](criando-um-documento/elementos-pos-textuais/conclusao)
 - [Referências](criando-um-documento/elementos-pos-textuais/referencias)
 - [Apêndices](criando-um-documento/elementos-pos-textuais/apendices)
 - [Anexos](criando-um-documento/elementos-pos-textuais/anexos)
-- [Glossário](criando-um-documento/elementos-pos-textuais/glossario)
 
 ## Casos de uso
 
