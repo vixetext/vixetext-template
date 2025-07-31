@@ -54,12 +54,12 @@ brew install git
 Para clonar o repositório no macOS, siga estes passos:
 
 1. **Copie a URL do repositório**:
-   - A URL é `https://github.com/ReinanHS/limarka-template-tcc.git`.
+   - A URL é `https://github.com/vixetext/vixetext-template.git`.
 
 2. **Abra o terminal**:
    - Navegue até o diretório onde deseja clonar o repositório.
-   - Execute o comando `git clone https://github.com/ReinanHS/limarka-template-tcc.git`.
-   - Entre no diretório clonado `cd limarka-template-tcc`.
+   - Execute o comando `git clone https://github.com/vixetext/vixetext-template.git`.
+   - Entre no diretório clonado `cd vixetext-template`.
 
 ## Compilação do repositório
 

@@ -19,8 +19,8 @@ Ao clicar no botão, você será redirecionado para uma nova tela no GitHub. Nel
 Se preferir, você também pode utilizar nossa ferramenta por meio do terminal. Para isso, é necessário ter o Docker instalado em sua máquina. Caso já atenda aos requisitos, basta executar os comandos abaixo para inicializar o projeto:
 
 ```sh
-git clone https://github.com/ReinanHS/limarka-template-tcc.git
-cd limarka-template-tcc
+git clone https://github.com/vixetext/vixetext-template.git
+cd vixetext-template
 ```
 
 Os comandos acima clonam o repositório do projeto para sua máquina. Após esse procedimento, execute o comando abaixo para compilar o projeto, gerando um arquivo PDF ao final:
