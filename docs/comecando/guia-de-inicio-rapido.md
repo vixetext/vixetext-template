@@ -10,7 +10,7 @@ Este guia foi desenvolvido para ajudar novos usuários a começarem a utilizar a
 
 Para utilizar nossa solução via navegador, recomendamos que clique no botão abaixo para abrir o repositório no GitHub Codespaces. Dessa forma, você executará todos os componentes necessários para o template em uma máquina já pré-configurada.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ReinanHS/limarka-template-tcc?machine=standardLinux2gb)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vixetext/vixetext-template?machine=standardLinux2gb)
 
 Ao clicar no botão, você será redirecionado para uma nova tela no GitHub. Nela, selecione a opção New Codespace. Isso fará com que uma nova máquina virtual seja criada e pré-configurada, permitindo o uso da solução sem a necessidade de baixar nenhuma ferramenta.
 

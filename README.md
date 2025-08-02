@@ -1,6 +1,6 @@
 <div align="center">
 
- ![limarka-template-tcc-logo](https://user-images.githubusercontent.com/28494067/192121768-6d86c159-29bb-4df1-b84b-7e8e65569c9e.png)
+ ![vixetext-template-logo](https://user-images.githubusercontent.com/28494067/192121768-6d86c159-29bb-4df1-b84b-7e8e65569c9e.png)
 
 # Limarka Template TCC
 
@@ -10,7 +10,7 @@ Esse repositório é responsável por conter os arquivos do esqueleto (modelo) p
 
 Provavelmente, se você chegou a utilizar o [abntex/trabalho-academico-limarka](https://github.com/abntex/trabalho-academico-limarka), você encontrou problemas ao configurar o ambiente. Ao usar esse modelo, vários problemas serão solucionados.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ReinanHS/limarka-template-tcc?machine=standardLinux2gb)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vixetext/vixetext-template?machine=standardLinux2gb)
 
 ## Sumário
 
@@ -79,7 +79,7 @@ Veja esse exemplo:
 
 ![image](https://user-images.githubusercontent.com/28494067/192122523-5656c7c8-a30f-4f77-963b-289a84c9a89d.png)
 
-Você pode acessar essa página pelo link: https://reinanhs.github.io/limarka-template-tcc/
+Você pode acessar essa página pelo link: https://vixetext.github.io/vixetext-template/
 
 #### Página com informações resumidas
 

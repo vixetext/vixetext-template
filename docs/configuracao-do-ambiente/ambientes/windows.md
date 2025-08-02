@@ -49,7 +49,7 @@ Veja o passo a passo para clonar o repositório:
 
 ### Copie a URL do Repositório
 
-1. Acesse a página do repositório no GitHub: [Limarka Template TCC](https://github.com/ReinanHS/limarka-template-tcc)
+1. Acesse a página do repositório no GitHub: [Limarka Template TCC](https://github.com/vixetext/vixetext-template)
 2. Clique no botão *Code* que está acima da lista de arquivos.
 3. Copie a URL fornecida na caixa de diálogo. Certifique-se de estar na aba HTTPS, que é mais fácil de usar. 
 
@@ -70,7 +70,7 @@ Veja o passo a passo para clonar o repositório:
 git clone https://github.com/vixetext/vixetext-template.git
 ```
 
-   - Este comando irá criar uma pasta chamada **limarka-template-tcc** no diretório atual, baixando todos os arquivos do repositório para esta pasta.
+   - Este comando irá criar uma pasta chamada **vixetext-template** no diretório atual, baixando todos os arquivos do repositório para esta pasta.
 4. Verifique a Clonagem
    - Após o término do comando, entre na pasta criada para verificar se todos os arquivos estão presentes:
 

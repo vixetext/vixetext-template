@@ -38,9 +38,9 @@ In this sense, the growing influence of the media has an indirect impact on the 
 
 Aos professores, pelas correções e ensinamentos que me permitiram apresentar um melhor desempenho no meu processo de formação profissional ao longo do curso.
 
-### [Ver publicação](https://reinanhs.github.io/limarka-template-tcc/assets/files/titulo-do-trabalho.pdf)
+### [Ver publicação](https://vixetext.github.io/vixetext-template/assets/files/titulo-do-trabalho.pdf)
 
 <hr>
 
-> Este projeto foi escrito utilizando [limarka-template-tcc](https://github.com/ReinanHS/limarka-template-tcc).
+> Este projeto foi escrito utilizando [vixetext-template](https://github.com/vixetext/vixetext-template).
 > Essa ferramenta é responsável por contém os arquivos do esqueleto (modelo) para iniciar a escrita de um trabalho acadêmico com o limarka. Além disso, este projeto contém várias outras novidades que facilitam a escrita de um trabalho acadêmico.

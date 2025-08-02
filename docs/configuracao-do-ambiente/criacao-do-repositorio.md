@@ -18,7 +18,7 @@ Antes de iniciar o processo de criação do repositório, certifique-se de que o
 
 Para utilizar o template em seus projetos, siga as instruções abaixo para criar um novo repositório na sua conta do GitHub, usando o nosso template como ponto de partida.
 
-1. Acesse o projeto Limarka-TCC no GitHub através do link: https://github.com/ReinanHS/limarka-template-tcc.
+1. Acesse o projeto Limarka-TCC no GitHub através do link: https://github.com/vixetext/vixetext-template.
 2. Clique no botão "*Use this template*", localizado próximo ao topo da página.
 3. Na tela seguinte, clique em "*Create a new repository*" para iniciar a criação de seu novo projeto.
 4. Escolha um nome descritivo e memorável para o seu repositório.

@@ -64,7 +64,7 @@ A comunidade de usuários é um dos pilares desta ferramenta:
 - **Colaboração ativa:** Professores, alunos e pesquisadores contribuem com sugestões e melhorias, criando um ambiente colaborativo.
 
 - **Fóruns e grupos de discussão:** Espaços dedicados para tirar dúvidas, compartilhar experiências e discutir melhores práticas na elaboração de trabalhos acadêmicos.
-  - [Fóruns no GitHub](https://github.com/ReinanHS/limarka-template-tcc/discussions)
+  - [Fóruns no GitHub](https://github.com/vixetext/vixetext-template/discussions)
   - [Discord](https://discordapp.com/invite/limarka)
   - [Stack Overflow](https://stackoverflow.com/questions/tagged/limarka)
 - **Documentação e tutoriais:** Materiais de apoio estão disponíveis para auxiliar novos usuários e promover o aprendizado contínuo sobre o uso do template.
