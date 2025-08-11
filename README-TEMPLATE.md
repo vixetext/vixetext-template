@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://www.logolynx.com/images/logolynx/a9/a98355315595fe5800b326aac90744f5.png" alt="ifs-logo" width="10%">
+<img src="https://vixetext.com.br/img/crests/ifs-dark.svg" alt="ifs-logo" width="30%">
 
 # Título do trabalho
 

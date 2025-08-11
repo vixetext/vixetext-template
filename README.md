@@ -1,122 +1,83 @@
 <div align="center">
 
- ![vixetext-template-logo](https://user-images.githubusercontent.com/28494067/192121768-6d86c159-29bb-4df1-b84b-7e8e65569c9e.png)
+<img src="https://github.com/user-attachments/assets/0e11849d-0587-4f08-83d4-e94aabf9c58f" alt="vixetext-template-logo" width="20%">
 
-# Limarka Template TCC
-
-</div>
-
-Esse repositório é responsável por conter os arquivos do esqueleto (modelo) para iniciar a escrita de um trabalho acadêmico com o [limarka](https://github.com/abntex/limarka). Além disso, este projeto contém várias outras novidades que facilitam a escrita de um trabalho acadêmico.
-
-Provavelmente, se você chegou a utilizar o [abntex/trabalho-academico-limarka](https://github.com/abntex/trabalho-academico-limarka), você encontrou problemas ao configurar o ambiente. Ao usar esse modelo, vários problemas serão solucionados.
+# VixeText — Template Acadêmico
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vixetext/vixetext-template?machine=standardLinux2gb)
 
-## Sumário
+</div>
 
-<details open>
-<summary>Principais informações</summary>
+## 📚 Sobre o VixeText
 
-- [O que esse modelo tem de diferente?](#head-intro)
-- [Documentação completa](#head-documentacao)
-- [Tecnologias e ferramentas utilizadas](#head-tecnologias)
-- [Licença](#head-licenca)
-- [Créditos](#head-creditos)
+O **VixeText** é um template acadêmico moderno e automatizado para criação de **Trabalhos de Conclusão de Curso (TCC)**, artigos e outros documentos científicos, com formatação compatível com as normas da **ABNT**.
 
-</details>
+Ele foi projetado para eliminar dificuldades comuns na configuração de ambientes e formatação, oferecendo:
 
-## [O que esse modelo tem de diferente?](#head-intro)
+* **Automação completa** de formatação e compilação.
+* **Compatibilidade multiplataforma** via Docker.
+* **Geração de múltiplos formatos**: PDF, slides e página web.
+* **Fluxo de publicação automatizado** com GitHub Actions.
 
-Durante a criação deste modelo, novos recursos foram adicionados para ajudá-lo a escrever um trabalho acadêmico com maior facilidade.
-Os principais recursos são:
+Para mais informações, consulte a [documentação oficial](https://vixetext.com/).
 
-- Criação de um ambiente utilizando `docker-compose`.
-- Criação do script `limarka-help` que vai lhe ajudar a fazer o build dos arquivos.
-- Criação de jobs no Github Actions para publicar seus trabalhos e disponibilizá-los no seu repositório.
-- Melhorias na estrutura de arquivos.
-- Adição de nova funcionalidade para importar arquivos markdown.
+---
 
-Veja esse vídeo com uma introdução rápida sobre esse template: [Limarka: como escrever um TCC em markdown](https://youtu.be/zuw0Fo1la2U)
+## 🚀 Como começar
 
-## [Documentação completa](#head-documentacao)
+A maneira mais rápida de começar é usando o **GitHub Codespaces**:
 
-Este projeto é acompanhado de uma documentação abrangente, que orienta detalhadamente a criação de um projeto do zero e a configuração do ambiente de desenvolvimento necessário para a utilização desta ferramenta. Recomendamos enfaticamente a consulta à documentação a seguir para compreender plenamente como aproveitar ao máximo os recursos oferecidos por este template:
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vixetext/vixetext-template?machine=standardLinux2gb)
 
-- [Clique nesse link para fazer a leitura da documentação](https://reinanhs.github.io/limarka-template-docs)
+Ou, se preferir, siga o **[Guia de Início Rápido](https://vixetext.com/comecando/guia-de-inicio-rapido)** na documentação oficial.
 
-## [Tecnologias e ferramentas utilizadas](#head-tecnologias)
+---
 
-As principais tecnologias usadas foram:
+## 🛠 Tecnologias principais
 
-- [Limarka](#head-limarka)
-- [Limarka Render HTML](#head-limarka-render)
-- [Docker](#head-docker)
-- [Github Actions](#head-github-action)
+* **[Limarka](https://github.com/abntex/limarka/wiki)** — Compilação de documentos acadêmicos em Markdown para PDF (ABNT).
+* **[Docker](https://www.docker.com/)** — Ambiente padronizado sem configuração manual.
+* **[Marp](https://marp.app/)** — Criação de apresentações de slides a partir do conteúdo do TCC.
+* **[GitHub Actions](https://docs.github.com/pt/actions)** — Automação de builds e publicações.
 
-### [O que é o Limarka](#head-limarka)
+Mais detalhes sobre cada tecnologia estão disponíveis na [documentação oficial](https://vixetext.com/).
 
-> O limarka é uma ferramenta de linha de comando (sem interface gráfica) que gera PDFs em conformidade com as Normas da ABNT a partir de textos escritos em Markdown.
+---
 
-Essa é a ferramenta base para esse projeto. Você poderá encontrar uma vasta documentação falando sobre essa ferramenta clicando nesse [link](https://github.com/abntex/limarka/wiki).
+## 📊 Estatísticas do repositório
 
-### [O que é o Docker](#head-docker)
+### Contribuidores
 
-> O Docker é uma plataforma open source que facilita a criação e administração de ambientes isolados. Ele possibilita o empacotamento de uma aplicação ou ambiente dentro de um container, tornando-o portátil para qualquer outro host que contenha o Docker instalado.
+[![Contribuidores](https://contrib.rocks/image?repo=vixetext/vixetext-template)](https://github.com/vixetext/vixetext-template/graphs/contributors)
 
-Com o Docker, você não precisa se preocupar em configurar um ambiente. Todas essas configurações já foram feitas e estão no Docker.
+### Atividade de commits
 
-**Atenção**: Para utilizar esse repositório, é recomendado fazer a instalação do Docker em sua máquina. Veja abaixo alguns links de ajuda:
+![Gráfico de commits](https://img.shields.io/github/commit-activity/m/vixetext/vixetext-template)
 
-- [Docker Desktop para Mac](https://youtu.be/ktNYPv6kfVk)
-- [Docker Desktop para Windows](https://youtu.be/05YN8F8ajBc)
-- [Docker Desktop para Linux](https://youtu.be/q4ZK6IJCS6Q)
+### Observadores de estrelas ao longo do tempo
 
-### [O que é o Limarka Render HTML](#head-limarka-render)
+![Histórico de estrelas](https://starchart.cc/vixetext/vixetext-template.svg)
 
-Esta é uma ferramenta para ajudá-lo a disponibilizar seu trabalho acadêmico em uma página da web. Com esta ferramenta, é possível fazer diversas customizações. Além disso, você pode compartilhar o link com outras pessoas para visualizar o seu artigo.
+---
 
-Veja esse exemplo:
+## 📄 Licença
 
-![image](https://user-images.githubusercontent.com/28494067/192122523-5656c7c8-a30f-4f77-963b-289a84c9a89d.png)
+Este projeto está sob a licença [MIT](LICENSE.md).
 
-Você pode acessar essa página pelo link: https://vixetext.github.io/vixetext-template/
+---
 
-#### Página com informações resumidas
+## 🤝 Contribuindo
 
-Esta ferramenta também irá gerar uma tabela com informações resumidas sobre o seu artigo. Além disso, ela também vai disponibilizar um link para visualizar seu artigo.
+Quer contribuir? Leia nosso guia de contribuição: [CONTRIBUTING.md](CONTRIBUTING.md).
 
-#### Outros recursos
+---
 
-- Botão de compartilhamento em redes sociais
-- Possibilidade de criar páginas
-- Sistema de comentários
-- Site responsivo
+## 🔗 Links úteis
 
-Caso você queira saber mais sobre essa ferramenta, veja essa [documentação](https://github.com/ReinanHS/limarka-render-html/wiki).
+* **Documentação oficial:** [vixetext.com](https://vixetext.com/)
+* **Fórum no GitHub:** [Discussões](https://github.com/vixetext/vixetext-template/discussions)
+* **Servidor no Discord:** [Entrar](https://discord.gg/abcdef123456)
 
-### [O que é o Github Actions](#head-github-action)
+---
 
-> GitHub Actions é uma plataforma de integração contínua e entrega contínua (CI/CD) que permite automatizar a sua compilação, teste e pipeline de implantação.
-
-Com essa ferramenta, é possível fazer o `build` automatizado do artigo acadêmico.
-
-## Changelog
-
-Por favor, veja [CHANGELOG](CHANGELOG.md) para obter mais informações sobre o que mudou recentemente.
-
-## Seja um dos contribuidores
-
-Quer fazer parte desse projeto? Clique AQUI e leia [como contribuir](CONTRIBUTING.md).
-
-## Segurança
-
-Se você descobrir algum problema relacionado à segurança, envie um e-mail para reinangabriel1520@gmail.com em vez de
-usar o issue.
-
-### [Licença](#head-licenca)
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-### [Créditos](#head-creditos)
-
-A logo utilizada nesse projeto foi retirada do site: [Flaticon](https://www.flaticon.com/br/icones-gratis/biblioteca)
+> 💡 **Dica:** Mantenha seu repositório atualizado para receber as últimas melhorias e correções.
