@@ -5,74 +5,96 @@ slug: /docs
 
 # Visão geral
 
-Bem-vindo à base de conhecimento do template para a criação de trabalhos de conclusão de curso. Esta documentação fornece um guia abrangente com uma lista completa de tópicos que vão ajudá-lo a escrever o seu trabalho. Nesta seção, você encontrará informações relevantes para começar a utilizar o nosso template.
+Bem-vindo à **base de conhecimento** do template para a criação de **Trabalhos de Conclusão de Curso (TCC)**. Esta documentação foi elaborada para servir como um **guia abrangente**, reunindo instruções, exemplos e orientações que apoiarão o estudante em todas as etapas da produção acadêmica.
 
-## O que é esse template?
+Nesta seção, você encontrará informações essenciais para compreender o funcionamento do template, conhecer suas vantagens, entender sua estrutura e identificar os melhores casos de uso.
 
-Este template é uma estrutura pré-formatada e padronizada que foi desenvolvida para orientar e facilitar a criação de trabalhos. Ele reúne seções essenciais, orientações de formatação e sugestões de conteúdo, com o intuito de ajudar os alunos a organizarem suas ideias, cumprirem os requisitos acadêmicos e produzirem um documento consistente e de qualidade.
+---
 
-## Por que usar o template?
+## O que é este template?
 
-Utilizar este template oferece diversas vantagens:
+O template é uma **estrutura pré-formatada e padronizada**, projetada para facilitar a criação de trabalhos acadêmicos. Ele reúne:
 
-- **Padronização**: Garante que o trabalho siga as normas e exigências da ABNT, economizando tempo na formatação.
-- **Orientação estruturada**: Auxilia na organização do conteúdo, facilitando a divisão de tópicos e garantindo que todas as seções importantes sejam contempladas.
-- **Qualidade e consistência**: Ao seguir um modelo testado e aprovado, os alunos conseguem manter um padrão elevado de qualidade textual e visual.
-- **Redução de dúvidas**: Com orientações claras, os alunos podem se concentrar na pesquisa e no conteúdo, sem se perder em detalhes de formatação ou estrutura.
+* Seções essenciais para um TCC completo.
+* Orientações de formatação.
+* Sugestões de conteúdo.
 
-## Visão geral da estrutura do template
+Seu objetivo é auxiliar o estudante a **organizar ideias**, **atender requisitos acadêmicos** e produzir um documento **coerente, consistente e de qualidade**, reduzindo a carga de trabalho com ajustes de formatação.
 
-O template foi pensado para ser flexível e adaptável às diferentes áreas de conhecimento, mantendo uma estrutura base que inclui:
+---
 
-- [Capa e folha de rosto](criando-uma-apresentacao/capa)
-- [Folha de rosto](criando-um-documento/elementos-pre-textuais/folha-de-rosto)
-- [Folha de aprovação](criando-um-documento/elementos-pre-textuais/folha-de-aprovacao)
-- [Dedicatória](criando-um-documento/elementos-pre-textuais/dedicatoria)
-- [Agradecimentos](criando-um-documento/elementos-pre-textuais/agradecimentos)
-- [Epígrafe](criando-um-documento/elementos-pre-textuais/epigrafe)
-- [Resumo](criando-um-documento/elementos-pre-textuais/resumo)
-- [Introdução](criando-um-documento/elementos-pos-textuais/introducoo)
-- [Fundamentação teórica](criando-um-documento/elementos-pos-textuais/fundamentacao-teorica)
-- [Desenvolvimento](criando-um-documento/elementos-pos-textuais/desenvolvimento)
-- [Trabalhos futuros](criando-um-documento/elementos-pos-textuais/trabalhos-futuros)
-- [Conclusão](criando-um-documento/elementos-pos-textuais/conclusao)
-- [Referências](criando-um-documento/elementos-pos-textuais/referencias)
-- [Apêndices](criando-um-documento/elementos-pos-textuais/apendices)
-- [Anexos](criando-um-documento/elementos-pos-textuais/anexos)
+## Por que usar este template?
+
+Entre os principais benefícios, destacam-se:
+
+* **Padronização:** Adequação às normas ABNT, economizando tempo na formatação.
+* **Orientação estruturada:** Facilita a divisão do conteúdo em tópicos e garante a presença de todas as seções relevantes.
+* **Qualidade e consistência:** Mantém um padrão textual e visual elevado, validado pela comunidade acadêmica.
+* **Foco no conteúdo:** Com a formatação automatizada, o estudante dedica mais tempo à pesquisa e à escrita.
+
+---
+
+## Estrutura do template
+
+O template é flexível e adaptável a diferentes áreas do conhecimento, mantendo uma **estrutura base** que contempla os seguintes elementos:
+
+* [Capa e folha de rosto](criando-uma-apresentacao/capa)
+* [Folha de rosto](criando-um-documento/elementos-pre-textuais/folha-de-rosto)
+* [Folha de aprovação](criando-um-documento/elementos-pre-textuais/folha-de-aprovacao)
+* [Dedicatória](criando-um-documento/elementos-pre-textuais/dedicatoria)
+* [Agradecimentos](criando-um-documento/elementos-pre-textuais/agradecimentos)
+* [Epígrafe](criando-um-documento/elementos-pre-textuais/epigrafe)
+* [Resumo](criando-um-documento/elementos-pre-textuais/resumo)
+* [Introdução](criando-um-documento/elementos-pos-textuais/introducoo)
+* [Fundamentação teórica](criando-um-documento/elementos-pos-textuais/fundamentacao-teorica)
+* [Desenvolvimento](criando-um-documento/elementos-pos-textuais/desenvolvimento)
+* [Trabalhos futuros](criando-um-documento/elementos-pos-textuais/trabalhos-futuros)
+* [Conclusão](criando-um-documento/elementos-pos-textuais/conclusao)
+* [Referências](criando-um-documento/elementos-pos-textuais/referencias)
+* [Apêndices](criando-um-documento/elementos-pos-textuais/apendices)
+* [Anexos](criando-um-documento/elementos-pos-textuais/anexos)
+
+---
 
 ## Casos de uso
 
-O template pode ser utilizado em diversos cenários:
+O template pode ser aplicado em diferentes contextos acadêmicos:
 
-- **Elaboração de TCCs:** Ideal para alunos de graduação e pós-graduação que precisam desenvolver trabalhos acadêmicos formais.
-- **Projetos de pesquisa:** Serve como base para a estruturação de projetos de pesquisa, facilitando a organização dos capítulos e seções.
-- **Capacitação e workshops:** Útil em treinamentos e oficinas de escrita acadêmica, onde o modelo serve como exemplo prático de um documento bem estruturado.
+* **TCCs:** Produção de trabalhos de graduação e pós-graduação.
+* **Projetos de pesquisa:** Estruturação de relatórios e capítulos de pesquisa.
+* **Treinamentos e oficinas:** Uso como exemplo prático em cursos de escrita acadêmica.
+
+---
 
 ## Características principais
 
-A ferramenta e o template contam com diversos atributos que as tornam indispensáveis para a comunidade acadêmica:
+* **Flexibilidade:** Adaptável a múltiplas áreas do conhecimento.
+* **Conformidade com normas:** Segue as diretrizes de formatação acadêmica (ABNT).
+* **Atualizações contínuas:** Revisões periódicas com melhorias e ajustes.
+* **Integração digital:** Compatível com editores de texto e plataformas de colaboração.
 
-- **Flexibilidade:** Estrutura adaptável às necessidades específicas de diferentes áreas do conhecimento.
-- **Conformidade com normas:** Orientações baseadas nas principais diretrizes de formatação acadêmica da ABNT, facilitando a adequação do trabalho às exigências institucionais.
-- **Atualizações constantes:** O template é revisado periodicamente para incorporar melhorias, novas normas e feedback da comunidade.
-- **Integração com ferramentas digitais:** Compatível com os principais editores de texto e plataformas de colaboração, o que permite uma experiência integrada e eficiente.
+---
 
 ## Comunidade
 
-A comunidade de usuários é um dos pilares desta ferramenta:
+O template é sustentado por uma comunidade ativa composta por professores, estudantes e pesquisadores, que contribuem com sugestões, melhorias e suporte.
 
-- **Colaboração ativa:** Professores, alunos e pesquisadores contribuem com sugestões e melhorias, criando um ambiente colaborativo.
+Canais de interação:
 
-- **Fóruns e grupos de discussão:** Espaços dedicados para tirar dúvidas, compartilhar experiências e discutir melhores práticas na elaboração de trabalhos acadêmicos.
-  - [Fóruns no GitHub](https://github.com/vixetext/vixetext-template/discussions)
-  - [Discord](https://discordapp.com/invite/limarka)
-  - [Stack Overflow](https://stackoverflow.com/questions/tagged/limarka)
-- **Documentação e tutoriais:** Materiais de apoio estão disponíveis para auxiliar novos usuários e promover o aprendizado contínuo sobre o uso do template.
-- **Feedback e melhorias contínuas:** Através de canais de comunicação, os usuários podem enviar feedback, que é analisado e incorporado nas atualizações futuras do template.
+* [Fóruns no GitHub](https://github.com/vixetext/vixetext-template/discussions)
+* [Servidor no Discord](https://discord.gg/abcdef123456)
+
+Benefícios da comunidade:
+
+* Troca de experiências.
+* Compartilhamento de boas práticas.
+* Feedback constante para evolução do template.
+
+---
 
 ## Próximos passos
 
-Para continuar evoluindo na documentação, os próximos passos incluem:
+Para começar a utilizar o template:
 
-- [Guia de início rápido](comecando/guia-de-inicio-rapido)
-- [Criação do repositório](configuracao-do-ambiente/criacao-do-repositorio)
+* Consulte o [Guia de início rápido](comecando/guia-de-inicio-rapido)
+* Veja como realizar a [criação do repositório](configuracao-do-ambiente/criacao-do-repositorio)

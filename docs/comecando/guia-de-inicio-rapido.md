@@ -4,27 +4,74 @@ sidebar_position: 2
 
 # Guia de início rápido
 
-Este guia foi desenvolvido para ajudar novos usuários a começarem a utilizar a ferramenta de maneira rápida e eficiente. As instruções estão divididas em três seções: uso via navegador, uso pela linha de comando (CLI) e os próximos passos para aprofundamento e personalização.
+Este guia foi elaborado para auxiliar **novos usuários** a configurar e utilizar o **VixeText** de forma ágil e eficiente. Ele fornece instruções para dois modos de uso: **via navegador** (sem instalação local) e **via linha de comando (CLI)**, além de indicar **próximos passos** para aprofundamento e personalização.
 
-## Usando o navegador
+---
 
-Para utilizar nossa solução via navegador, recomendamos que clique no botão abaixo para abrir o repositório no GitHub Codespaces. Dessa forma, você executará todos os componentes necessários para o template em uma máquina já pré-configurada.
+## 1. Utilizando no Navegador (GitHub Codespaces)
+
+A maneira mais simples de iniciar é executando o VixeText diretamente no **GitHub Codespaces**, que oferece um ambiente virtual pré-configurado, dispensando a instalação de ferramentas adicionais em seu computador.
+
+Para abrir o template no Codespaces, clique no botão abaixo:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/vixetext/vixetext-template?machine=standardLinux2gb)
 
-Ao clicar no botão, você será redirecionado para uma nova tela no GitHub. Nela, selecione a opção New Codespace. Isso fará com que uma nova máquina virtual seja criada e pré-configurada, permitindo o uso da solução sem a necessidade de baixar nenhuma ferramenta.
+**Passos:**
 
-## Usando CLI
+1. Clique no botão acima para acessar o repositório no GitHub.
+2. Na página aberta, selecione **"New Codespace"**.
+3. Aguarde enquanto o GitHub cria e configura automaticamente uma máquina virtual com todos os componentes necessários.
+4. Após a inicialização, o ambiente estará pronto para edição e compilação dos documentos acadêmicos.
 
-Se preferir, você também pode utilizar nossa ferramenta por meio do terminal. Para isso, é necessário ter o Docker instalado em sua máquina. Caso já atenda aos requisitos, basta executar os comandos abaixo para inicializar o projeto:
+> 💡 **Vantagem:** ideal para iniciantes ou para quem deseja testar rapidamente a ferramenta sem configurar o ambiente local.
+
+---
+
+## 2. Utilizando via Linha de Comando (CLI)
+
+Para usuários que preferem um ambiente local ou necessitam de maior controle, o VixeText também pode ser executado via terminal, com auxílio do **Docker**.
+
+### Pré-requisitos
+
+* **Docker** instalado e em funcionamento na máquina.
+* Conhecimento básico de comandos de terminal.
+
+### Passo a passo
+
+1. **Clonar o repositório do template:**
 
 ```sh
 git clone https://github.com/vixetext/vixetext-template.git
 cd vixetext-template
 ```
 
-Os comandos acima clonam o repositório do projeto para sua máquina. Após esse procedimento, execute o comando abaixo para compilar o projeto, gerando um arquivo PDF ao final:
+2. **Executar a compilação para gerar o PDF:**
 
 ```sh
-docker run --rm -it -v "$(pwd)":/usr/src/trabalho --entrypoint="/bin/bash" reinanhs/limarka-help:1.0.0 -c "limarka-help"
+docker run --rm -it \
+    -v "$(pwd)":/usr/src/trabalho \
+    --entrypoint="/bin/bash" \
+    reinanhs/limarka-help:1.0.0 \
+    -c "limarka-help"
 ```
+
+Esse comando:
+
+* Monta o diretório atual no contêiner Docker.
+* Executa o compilador do VixeText, que processa o conteúdo em Markdown e gera automaticamente o **arquivo PDF final** no diretório do projeto.
+
+> 💡 **Dica:** mantenha seu conteúdo sempre salvo antes de compilar para evitar perda de alterações.
+
+---
+
+## 3. Próximos Passos
+
+Após a configuração inicial, você pode:
+
+* Editar os arquivos `.md` para inserir o conteúdo do seu trabalho.
+* Configurar o arquivo `configuracao.yaml` para ajustar título, autor, orientador e outros metadados.
+* Adicionar e gerenciar referências bibliográficas com **BibTeX**.
+* Criar apresentações em **Marp** a partir do conteúdo do TCC.
+* Publicar seu trabalho como página web.
+
+Para mais detalhes, consulte a [documentação completa](/configuracao-do-ambiente/criacao-do-repositorio).
