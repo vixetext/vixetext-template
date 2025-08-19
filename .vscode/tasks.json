@@ -8,13 +8,13 @@
             "label": "Limarka Builder",
             "type": "shell",
             "linux": {
-                "command": "sh",
+                "command": "bash",
                 "args": [
                     ".vscode/scripts/builder.sh"
                 ]
             },
             "osx": {
-                "command": "sh",
+                "command": "bash",
                 "args": [
                     ".vscode/scripts/builder.sh",
                 ]
