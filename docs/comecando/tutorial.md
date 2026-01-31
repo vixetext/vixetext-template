@@ -22,7 +22,7 @@ Todos os materiais foram elaborados para atender tanto **iniciantes** quanto **u
 
 Para começar, assista ao vídeo introdutório abaixo. Nele, apresentamos uma visão geral da ferramenta, seu fluxo de trabalho e exemplos de como transformar arquivos Markdown em PDFs formatados, apresentações de slides e páginas web acadêmicas.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zuw0Fo1la2U?si=xvA2uv0WadChjJhZ" title="Introdução ao VixeText" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_YRReGnkitI?si=dbIHaNYkkMAaSrC1" title="VixeText ‐ Como um programador faz um TCC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > 💡 **Dica:** Recomendamos assistir a este vídeo antes de explorar as demais seções, pois ele fornece o contexto necessário para compreender o funcionamento geral da ferramenta.
 
