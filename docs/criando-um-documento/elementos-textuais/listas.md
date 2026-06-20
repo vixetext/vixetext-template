@@ -110,20 +110,6 @@ Veja, na imagem abaixo, como essa lista é renderizada no PDF:
 
 ![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-alfabeticas.png)
 
-## Listas alfabéticas com parênteses
-
-Você também pode escrever listas alfabéticas usando parênteses.
-
-**Exemplo com letra seguida de parêntese:**
-
-```md
-a) Identificação dos estudos.
-b) Remoção de duplicatas.
-c) Triagem por título e resumo.
-d) Leitura do texto completo.
-e) Extração dos dados.
-```
-
 **Exemplo com letra entre parênteses:**
 
 ```md
