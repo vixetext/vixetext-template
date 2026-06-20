@@ -84,6 +84,12 @@ Veja, na imagem abaixo, como essa lista é renderizada no PDF:
 
 ## Listas alfabéticas
 
+:::warning
+
+O suporte a listas alfabéticas depende da extensão `fancy_lists` do Pandoc, que não está habilitada por padrão no VixeText. Se a lista não for renderizada corretamente no PDF, consulte as seções [Observação para usuários avançados](#observação-para-usuários-avançados) e [Uso de LaTeX como último recurso](#uso-de-latex-como-último-recurso).
+
+:::
+
 Use listas alfabéticas para apresentar alternativas, categorias, critérios ou subitens.
 
 **Exemplo com letras minúsculas:**
@@ -106,10 +112,6 @@ D.  Grupo de comparação.
 
 > **Nota:** Em listas com letras maiúsculas seguidas de ponto, use dois espaços depois do marcador, como em `A.  Grupo de controle`. Isso evita ambiguidades durante a conversão do documento.
 
-Veja, na imagem abaixo, como essa lista é renderizada no PDF:
-
-![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-alfabeticas.png)
-
 **Exemplo com letra entre parênteses:**
 
 ```md
@@ -122,34 +124,6 @@ Veja, na imagem abaixo, como essa lista é renderizada no PDF:
 Veja, na imagem abaixo, como essa lista é renderizada no PDF:
 
 ![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-alfabeticas-com-parenteses.png)
-
-## Listas com algarismos romanos
-
-Use listas com algarismos romanos quando quiser indicar etapas, categorias ou níveis de classificação.
-
-**Exemplo com algarismos romanos minúsculos:**
-
-```md
-i. Planejamento.
-ii. Execução.
-iii. Análise.
-iv. Discussão.
-v. Conclusão.
-```
-
-**Exemplo com algarismos romanos maiúsculos:**
-
-```md
-I) Fundamentação teórica.
-II) Procedimentos metodológicos.
-III) Resultados.
-IV) Discussão.
-V) Considerações finais.
-```
-
-Veja, na imagem abaixo, como essa lista é renderizada no PDF:
-
-![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-com-algarismos-romanos.png)
 
 ## Listas com marcador automático
 
@@ -263,26 +237,6 @@ Veja, na imagem abaixo, como essa lista é renderizada no PDF:
 
 ![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-com-outros-elementos.png)
 
-## Listas de tarefas
-
-A extensão [task_lists do Pandoc](https://pandoc.org/demo/example33/8.7-lists.html) não vem habilitada por padrão. Portanto, a sintaxe Markdown para listas de tarefas, como `- [x]` e `- [ ]`, não é convertida em caixas de seleção no PDF. Para garantir uma apresentação visual adequada, use o exemplo em LaTeX.
-
-**Exemplo:**
-
-```tex
-\begin{itemize}
-\item[\fbox{\scriptsize X}] Definir o tema do estudo.
-\item[\fbox{\scriptsize X}] Elaborar o protocolo.
-\item[\fbox{\phantom{\scriptsize X}}] Executar a busca nas bases.
-\item[\fbox{\phantom{\scriptsize X}}] Aplicar os critérios de seleção.
-\item[\fbox{\phantom{\scriptsize X}}] Escrever a seção de resultados.
-\end{itemize}
-````
-
-Veja, na imagem abaixo, como essa lista é renderizada no PDF:
-
-![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-de-tarefas.png)
-
 ## Listas de exemplos numerados
 
 Use listas de exemplos numerados quando precisar apresentar exemplos que podem ser referenciados ao longo do texto.
@@ -310,6 +264,22 @@ Como ilustrado em (@exemplo-protocolo), exemplos numerados podem ser retomados e
 Veja, na imagem abaixo, como essa lista é renderizada no PDF:
 
 ![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-de-exemplos-numerados.png)
+
+## Listas com algarismos romanos
+
+Use listas com algarismos romanos quando quiser indicar etapas, categorias ou níveis de classificação.
+
+```md
+I) Fundamentação teórica.
+II) Procedimentos metodológicos.
+III) Resultados.
+IV) Discussão.
+V) Considerações finais.
+```
+
+Veja, na imagem abaixo, como essa lista é renderizada no PDF:
+
+![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-com-algarismos-romanos.png)
 
 ## Visualização no documento PDF
 
@@ -368,7 +338,9 @@ Da mesma forma, utilize o código abaixo se precisar de rótulos textuais person
 \endgroup
 ```
 
-**Listas com algarismos romanos maiúsculos:** Como mencionado nas seções anteriores, a extensão `fancy_lists` não está habilitada por padrão. Isso significa que listas com algarismos romanos maiúsculos escritas em Markdown podem não ser reconhecidas corretamente durante a compilação em alguns cenários específicos. Se você encontrar dificuldades ao seguir os procedimentos em Markdown detalhados anteriormente, pode recorrer ao LaTeX como alternativa. Para garantir a saída correta, use:
+### Listas com algarismos romanos maiúsculos
+
+Como mencionado nas seções anteriores, a extensão `fancy_lists` não está habilitada por padrão. Isso significa que listas com algarismos romanos maiúsculos escritas em Markdown podem não ser reconhecidas corretamente durante a compilação em alguns cenários específicos. Se você encontrar dificuldades ao seguir os procedimentos em Markdown detalhados anteriormente, pode recorrer ao LaTeX como alternativa. Para garantir a saída correta, use:
 
 ```latex
 \begingroup
@@ -398,7 +370,13 @@ Também é possível usar algarismos romanos maiúsculos com parêntese:
 \endgroup
 ```
 
-**Listas alfabéticas com ponto:** Se você precisa que a lista apareça exatamente com ponto (`a.`, `b.`, `c.`) em vez de parêntese (`a)`), use LaTeX:
+Veja, na imagem abaixo, como essa lista é renderizada no PDF:
+
+![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-com-algarismos-romanos-latex.png)
+
+### Listas alfabéticas com ponto
+
+Se você precisa que a lista apareça exatamente com ponto (`a.`, `b.`, `c.`) em vez de parêntese (`a)`), use LaTeX:
 
 ```latex
 \begingroup
@@ -426,7 +404,13 @@ Também é possível usar letras maiúsculas com ponto:
 \endgroup
 ```
 
-**Listas de tarefas:** A sintaxe `- [x]` e `- [ ]` do Markdown depende da extensão `task_lists`, que não está habilitada por padrão. Para apresentar uma lista com caixas de seleção no PDF, use LaTeX:
+Veja, na imagem abaixo, como essa lista é renderizada no PDF:
+
+![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-alfabeticas-com-ponto.png)
+
+### Listas de tarefas
+
+A sintaxe `- [x]` e `- [ ]` do Markdown depende da extensão `task_lists`, que não está habilitada por padrão. Para apresentar uma lista com caixas de seleção no PDF, use LaTeX:
 
 ```latex
 \begin{itemize}
@@ -437,5 +421,9 @@ Também é possível usar letras maiúsculas com ponto:
 \item[\fbox{\phantom{\scriptsize X}}] Escrever a seção de resultados.
 \end{itemize}
 ```
+
+Veja, na imagem abaixo, como essa lista é renderizada no PDF:
+
+![Exemplo de listas em PDF](../../assets/img/exemplo-de-listas-de-tarefas.png)
 
 No geral, sempre que possível, prefira a sintaxe Markdown. Ela é mais simples, legível e fácil de manter. Recorra ao LaTeX apenas quando o resultado esperado não puder ser alcançado de outra forma.
